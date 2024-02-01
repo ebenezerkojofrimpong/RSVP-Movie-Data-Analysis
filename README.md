@@ -8,10 +8,53 @@
 
 
 ## Project Overview
-"RSVP Movies Data Analysis" is a comprehensive data analysis project aiming to leverage insights from movie data spanning three years (2017 - 2019). As a prominent Indian film production company, RSVP Movies has earned acclaim for its consistent delivery of super-hit movies that resonate with diverse audiences.
+"RSVP Movies Data Analysis" is a comprehensive data analysis project aiming to leverage insights from movie data spanning three years (2017 - 2019). 
+As a prominent Indian film production company, RSVP Movies has earned acclaim for its consistent delivery of super-hit movies that resonate with diverse audiences.
 This data analysis initiative is driven by a commitment to infuse creativity with data-driven decision-making. With a rich history of crafting successful films, RSVP Movies seeks to further enhance its global footprint by tailoring a cinematic experience for audiences worldwide in 2024. To ensure the success of this ambitious venture, RSVP Movies has embraced the power of data analytics.
 
 As a data analyst and SQL expert, my role in this project is to meticulously analyze and interpret the vast repository of movie-related data. The goal is not only to understand past trends but to uncover actionable insights that will guide RSVP Movies in making strategic decisions aligned with the preferences and expectations of a diverse global audience.
+
+![](dataset_image)
+![Screenshot (11)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fec46a40-8583-4744-ac89-7c09c30d38d6)
+
+---
+
+## Modelling
+ERD diagram for RSVP:
+![](ERD_image)
+![1_yPJ-tGBPMVq1oK-XXTwohA](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/4fa9b020-8f9e-406b-a3b4-c1be44afafd0)
+
+
+---
+
+We will address this case using the following methodology:
+
+`ASK, PREPARE, PROCESS, ANALYSE, SHARE AND ACT`
+
+
+## **ASK**
+This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
+
+These questions will guide the future marketing program:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
