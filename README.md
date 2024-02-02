@@ -39,13 +39,15 @@ These questions will guide the future marketing program:
     - How does RSVP Movies' box office performance compare with other production companies?
     - Are there significant differences in performance across different regions or markets?
     - Have there been noticeable seasonal patterns in movie releases and their performance?
+    - How does a movie's box office performance vary between weekdays and weekends?
 
 
 2. What factors contribute to the success of different movie genres?
     - Which movie genres have consistently performed well for RSVP Movies?
     - Are there emerging trends in audience preferences for specific genres?
     - What are the demographic characteristics of the audience for top performing movies?
-    - Are there patterns indicating peak viewing times or days for specific genres?
+    - Are there patterns indicating peak viewing days for specific genres?
+    - Are there specific genres that perform better on weekdays or weekends?
 
 3. How do movie ratings impact the overall success of RSVP Movies' production?
     - Have there been fluctuations in average ratings over the three-year period?
@@ -99,9 +101,10 @@ Here are the key skills needed:
 ### Tableau Skills:
 1. Data Connection
 2. Data Visualization
-3. Dashboard Creation
-4. Filtering and Sorting
-5. Mapping and Geographic Analysis
+3. Calculated Fields
+4. Dashboard Creation
+5. Filtering and Sorting
+6. Mapping and Geographic Analysis
 
 
 ## Key Stakeholders
@@ -216,7 +219,40 @@ The tools used in this project are **MySQL** and **Tableau**.
 ## PROCESS
 This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
 
+A summary of the cleaning and manipulation done to the data is presented below:
 
+1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I will ignore the null values.
+2.	Added quarter, month and day_of_week columns to aid the analysis process.
+3.	Removed inconsistent ride length values.
+4.	Removed the start_lat, start_lng, end_lat and end_lng columns since we won't need them in the analysis.
+
+The Data Cleaning Process:
+
+1. Checking all Null values in the Movie Table
+
+```sql
+
+-- Identifying columns with Null values in the Movie table--
+SELECT 
+    SUM(CASE WHEN id IS NULL THEN 1 ELSE 0 END) AS id_null_count,
+    SUM(CASE WHEN title IS NULL THEN 1 ELSE 0 END) AS title_null_count,
+    SUM(CASE WHEN year IS NULL THEN 1 ELSE 0 END) AS year_null_count,
+    SUM(CASE WHEN date_published IS NULL THEN 1 ELSE 0 END) AS date_published_null_count,
+    SUM(CASE WHEN duration IS NULL THEN 1 ELSE 0 END) AS duration_null_count,
+    SUM(CASE WHEN country IS NULL THEN 1 ELSE 0 END) AS country_null_count,
+    SUM(CASE WHEN worldwide_gross_income IS NULL THEN 1 ELSE 0 END) AS worlwide_gross_income_null_count,
+    SUM(CASE WHEN languages IS NULL THEN 1 ELSE 0 END) AS languages_null_count,
+    SUM(CASE WHEN production_company IS NULL THEN 1 ELSE 0 END) AS production_company_null_count
+FROM movie;
+
+```
+
+[](movie_null_values)
+<div align="center">
+
+![Screenshot (14)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/543969d7-5ea8-45e9-b991-2e3d8bab8bf6)
+
+</div>
 
 
 
