@@ -27,6 +27,8 @@ We will address this case using the following methodology:
 ## **ASK**
 This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
 
+<br>
+
 These questions will guide the future marketing program:
 
 1. How does the box office perform?
@@ -70,7 +72,7 @@ These questions will guide the future marketing program:
     - Which languages are most prevalent in the dataset?
     - Are high performing genres associated with a particular set of languages?
       
-
+<br>
 
 ## Business Task
 The primary goal is to extract actionable insights and provide strategic recommendations for RSVP Movies.
@@ -112,6 +114,8 @@ recommended marketing program.
 
 ## PREPARE
 Involves collecting data and information and ensuring it satisfies necessary parameters.
+
+<br>
 
 ### Modelling
 ERD diagram for RSVP:
@@ -157,15 +161,6 @@ SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
 </div>
 
 
-
-
-
-
-
-
-
-
-
 #### `Features:`
 
 **movie_id** => The unique identifier of the movie
@@ -209,6 +204,16 @@ SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
 **median_rating** => The median rating assigned to a movie
 
 
+---
+
+## Tools
+The tools used in this project are **MySQL** and **Tableau**.
+
+---
+
+
+## PROCESS
+This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
 
 
 
