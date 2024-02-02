@@ -324,11 +324,11 @@ CREATE TEMPORARY TABLE IF NOT EXISTS movie_converted AS
   ELSE 'December'
   END AS  month ,
   CASE 
-	WHEN duration < 90 THEN 'Short '
+    WHEN duration < 90 THEN 'Short '
     WHEN duration >= 90 AND duration <=120 THEN 'Standard'
     ELSE 'Long'
     END AS duration1
-FROM movie_added;
+  FROM movie_added;
 
 
 ```
