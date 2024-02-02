@@ -286,8 +286,16 @@ FROM movie;
 
 ```
 
+[](added_columns_image)
+<div align="center">
 
-3. Converting month, day_of_week, and duration columns alongside adding time_period column to the Movie Table.
+![Screenshot (15)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/1c18db25-9da0-4373-a937-ae7a573623cc)
+
+</div>
+
+<br>
+
+3. Converting month, day_of_week, time_period,  and duration columns alongside adding time_period column to the Movie Table.
 
 ```sql
 
@@ -324,15 +332,19 @@ CREATE TEMPORARY TABLE IF NOT EXISTS movie_converted AS
   ELSE 'December'
   END AS  month ,
   CASE 
-    WHEN duration < 90 THEN 'Short '
-    WHEN duration >= 90 AND duration <=120 THEN 'Standard'
+    WHEN duration1 < 90 THEN 'Short '
+    WHEN duration1 >= 90 AND duration1 <=120 THEN 'Standard'
     ELSE 'Long'
-    END AS duration1
-  FROM movie_added;
-
+    END AS duration
+ FROM movie_added;
 
 ```
 
+[](added_columns_image)
+<div align="center">
+	
+![Screenshot (17)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/5b3cfe1a-545e-479a-ab64-61444827022a)
 
+</div>
 
 
