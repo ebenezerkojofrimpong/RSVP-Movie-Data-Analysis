@@ -219,12 +219,18 @@ The tools used in this project are **MySQL** and **Tableau**.
 ## PROCESS
 This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
 
+<br>
+
 A summary of the cleaning and manipulation done to the data is presented below:
 
 1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I will ignore the null values.
-2.	Added quarter, month and day_of_week columns to aid the analysis process.
-3.	Removed inconsistent ride length values.
-4.	Removed the start_lat, start_lng, end_lat and end_lng columns since we won't need them in the analysis.
+2.	Added quarter, month, day_of_week and time_period columns to the Movie Table.
+3.	Converted the month column by assigning (1 - January and 12 - December)
+4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday)
+5.	Converted the duration column by assigning (Short - less than 90min, Standard - From 90min to 120min, and Long - Greater than 120min)
+6.	Removed the start_lat, start_lng, end_lat and end_lng columns since we won't need them in the analysis.
+
+<br>
 
 The Data Cleaning Process:
 
@@ -255,9 +261,77 @@ FROM movie;
 </div>
 
 
+2. Adding quarter, month and day_of_week columns to the Movie Table.
+
+```sql
+
+-- Adding Quarter, Month and Day of week columns to the Movie Table --
+DROP TABLE IF EXISTS movie_added;
+CREATE TEMPORARY TABLE IF NOT EXISTS movie_added AS -- Table with quarter, month, and day_of_week columns
+SELECT
+    id,
+    title,
+    year,
+    QUARTER(date_published) AS quarter_num,
+    MONTH(date_published) AS month_num,
+	DAYOFWEEK(date_published) AS day_of_week_num,
+    date_published,
+    duration,
+    country,
+    worldwide_gross_income,
+    languages,
+    production_company
+FROM movie;
 
 
+```
 
+
+3. Converting month, day_of_week, and duration columns alongside adding time_period column to the Movie Table.
+
+```sql
+
+-- Converting month, day_of_week, time_period and duration columns in the Movie Table --
+DROP TABLE IF EXISTS movie_converted;
+CREATE TEMPORARY TABLE IF NOT EXISTS movie_converted AS 
+  SELECT
+    *,
+    CASE day_of_week_num
+      WHEN 1 THEN 'Sunday'
+      WHEN 2 THEN 'Monday'
+      WHEN 3 THEN 'Tuesday'
+      WHEN 4 THEN 'Wednesday'
+      WHEN 5 THEN 'Thursday'
+      WHEN 6 THEN 'Friday'
+  ELSE 'Saturday'
+  END AS day_of_week,
+     CASE 
+      WHEN day_of_week_num IN (1, 7) THEN 'weekend'
+      ELSE 'weekday'
+    END AS time_period,
+  CASE month_num
+      WHEN 1 THEN 'January'
+      WHEN 2 THEN 'February'
+      WHEN 3 THEN 'March'
+      WHEN 4 THEN 'April'
+      WHEN 5 THEN 'May'
+      WHEN 6 THEN 'June'
+      WHEN 7 THEN 'July'
+      WHEN 8 THEN 'August'
+      WHEN 9 THEN 'September'
+      WHEN 10 THEN 'October'
+      WHEN 11 THEN 'November'
+  ELSE 'December'
+  END AS  month ,
+  CASE 
+	WHEN duration < 90 THEN 'Short '
+    WHEN duration >= 90 AND duration <=120 THEN 'Standard'
+    ELSE 'Long'
+    END AS duration1
+FROM movie_added;
+
+
+```
 
 
 
