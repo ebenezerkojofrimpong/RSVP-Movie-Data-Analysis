@@ -19,14 +19,6 @@ As a data analyst and SQL expert, my role in this project is to meticulously ana
 
 ---
 
-## Modelling
-ERD diagram for RSVP:
-![](ERD_image)
-![1_yPJ-tGBPMVq1oK-XXTwohA](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/4fa9b020-8f9e-406b-a3b4-c1be44afafd0)
-
-
----
-
 We will address this case using the following methodology:
 
 `ASK, PREPARE, PROCESS, ANALYSE, SHARE AND ACT`
@@ -60,13 +52,24 @@ These questions will guide the future marketing program:
     - What insights can be gained from the median ratings of RSVP Movies' productions?
     - Are there instances where median ratings differ significantly from average ratings?
   
-4. How do actors contribute to the overall performance and success of RSVP Movies' productions?
+4. How do characters contribute to the overall performance and success of RSVP Movies' productions?
     - Which characters have consistently performed well in terms of box office success?
     - Are there specific characters associated with high-rated movies?
   
 5. How do the directors impact the success of RSVP Movies' films?
     - How do different directors contribute to the overall success of RSVP Movies' films?
     - What is the distribution of box office performance across different directors?
+  
+6. How does movie duration contribute to the success of RSVP Movies' productions?
+    - Have movies become longer or shorter over time?
+    - Are high performing genres associated with longer or shorter movies?
+    - Are movies from specific regions consistently longer or shorter?
+    - Do viewers tend to prefer shorter or longer movies?
+  
+7. How does language contribute to the diversity and evolution of films within the dataset?
+    - Which languages are most prevalent in the dataset?
+    - Are high performing genres associated with a particular set of languages?
+      
 
 
 ## Business Task
@@ -110,14 +113,45 @@ recommended marketing program.
 ## PREPARE
 Involves collecting data and information and ensuring it satisfies necessary parameters.
 
+### Modelling
+ERD diagram for RSVP:
+![](ERD_image)
+![download](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/44f5ae39-4492-43c6-a389-048fc509c212)
+
+
 ### Data Location
 Kindly follow the link to download file that contains data to create database.
-> Download SQL file link [here](https://drive.google.com/drive/folders/197jb8jmwkpc7HU2ib16Jn56_RPLLShPf)
-> Download SQL file link [here](https://drive.google.com/drive/folders/197jb8jmwkpc7HU2ib16Jn56_RPLLShPf)" target="_blank">
+> Download SQL file [here](https://drive.google.com/drive/folders/197jb8jmwkpc7HU2ib16Jn56_RPLLShPf)
 
 
 ### Data Organization
-The dataset contains 5,719,877 Observations and 13 Attributes.
+The dataset contains 6 separate tables and 13 Attributes in all.
+
+The Query below shows the total number of observations / rows in each table.
+
+```sql
+
+USE imdb;
+SELECT 'director_mapping' AS TableName, COUNT(*) AS RowCount FROM director_mapping
+UNION ALL
+SELECT 'genre' AS TableName, COUNT(*) AS RowCount FROM genre
+UNION ALL
+SELECT 'movie' AS TableName, COUNT(*) AS RowCount FROM movie
+UNION ALL
+SELECT 'names' AS TableName, COUNT(*) AS RowCount FROM names
+UNION ALL
+SELECT 'ratings' AS TableName, COUNT(*) AS RowCount FROM ratings
+UNION ALL
+SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
+
+```
+
+[](Result_for_Row_count)
+![Screenshot (12)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/dc974bbf-eb6c-49c9-8163-0a7169fbc323)
+
+
+
+
 
 #### `Features:`
 
