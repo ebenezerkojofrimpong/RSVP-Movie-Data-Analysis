@@ -107,7 +107,22 @@ recommended marketing program.
 
 ---
 
+## PREPARE
+Involves collecting data and information and ensuring it satisfies necessary parameters.
 
+### Data Location
+Kindly follow the link to download file that contains data to create database.
+> Download SQL file link [here](https://drive.google.com/drive/folders/197jb8jmwkpc7HU2ib16Jn56_RPLLShPf)
+> Download SQL file link [here](https://drive.google.com/drive/folders/197jb8jmwkpc7HU2ib16Jn56_RPLLShPf){:target="_blank"}
+
+### Data Organization
+The dataset contains 5,719,877 Observations and 13 Attributes.
+
+#### `Features:`
+
+**ride_id** => Unique ID per ride
+
+**rideable_type** => Type of bicycle used
 
 
 
