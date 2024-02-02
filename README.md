@@ -98,6 +98,14 @@ Here are the key skills needed:
 5. Mapping and Geographic Analysis
 
 
+## Key Stakeholders
+- **RSVP Movies marketing analytics team**: A team of data analysts who are responsible for collecting, analyzing, and reporting
+data that helps guide RSVP Movies marketing strategy. 
+
+- **RSVP Movies executive team**: The notoriously detail-oriented executive team will decide whether to approve the
+recommended marketing program.
+
+---
 
 
 
