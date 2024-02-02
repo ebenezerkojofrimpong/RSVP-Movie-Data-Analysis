@@ -69,9 +69,33 @@ These questions will guide the future marketing program:
     - What is the distribution of box office performance across different directors?
 
 
+## Business Task
+The primary goal is to extract actionable insights and provide strategic recommendations for RSVP Movies.
 
 
+## Skills / Concepts Applied
 
+For this project, a combination of SQL and Tableau skills were crucial for extracting, processing, and visualizing insights from the dataset. 
+Here are the key skills needed:
+
+### SQL Skills:
+1. Data Modelling
+2. Writing SQL Queries
+3. Filtering and Sorting
+4. Data Transformation
+5. Performing Join operations
+6. performing Union operations
+7. Writing Sub-queries
+8. Grouping and Aggregation
+9. Exploratory Data Analysis (EDA)
+
+
+### Tableau Skills:
+1. Data Connection
+2. Data Visualization
+3. Dashboard Creation
+4. Filtering and Sorting
+5. Mapping and Geographic Analysis
 
 
 
