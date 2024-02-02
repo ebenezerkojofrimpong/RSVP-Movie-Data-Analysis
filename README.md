@@ -125,7 +125,7 @@ Kindly follow the link to download file that contains data to create database.
 
 
 ### Data Organization
-The dataset contains 6 separate tables with 75873 observations and 13 Attributes in all.
+The dataset contains 6 separate tables with 75873 observations in all.
 
 The Query below shows the total number of observations / rows in each table.
 
@@ -150,7 +150,17 @@ SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
 ```
 
 [](Result_for_Row_count)
+<div align="center">
+
 ![Screenshot (12)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/dc974bbf-eb6c-49c9-8163-0a7169fbc323)
+
+</div>
+
+
+
+
+
+
 
 
 
