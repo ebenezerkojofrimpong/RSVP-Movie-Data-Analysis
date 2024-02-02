@@ -53,6 +53,23 @@ These questions will guide the future marketing program:
     - Are there patterns indicating peak viewing times or days for specific genres?
 
 3. How do movie ratings impact the overall success of RSVP Movies' production?
+    - Have there been fluctuations in average ratings over the three-year period?
+    - Is there a consistent relationship between audience ratings and box office success?
+    - Are there noticeable trends in the ratings of different genres?
+    - Do movies with higher ratings tend to attract larger audiences?
+    - What insights can be gained from the median ratings of RSVP Movies' productions?
+    - Are there instances where median ratings differ significantly from average ratings?
+  
+4. How do actors contribute to the overall performance and success of RSVP Movies' productions?
+    - Which characters have consistently performed well in terms of box office success?
+    - Are there specific characters associated with high-rated movies?
+  
+5. How do the directors impact the success of RSVP Movies' films?
+    - How do different directors contribute to the overall success of RSVP Movies' films?
+    - What is the distribution of box office performance across different directors?
+
+
+
 
 
 
