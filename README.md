@@ -358,7 +358,7 @@ DROP TABLE IF EXISTS movie_final;
 
 CREATE TABLE IF NOT EXISTS movie_final AS
 SELECT -- Combining all columns using INNER JOIN for final analysis
-	MC.*,
+    MC.*,
     DM.name_id AS director,
     G.genre,
     R.avg_rating,
