@@ -427,5 +427,52 @@ In this phase we analyze the data using statistical methods to find patterns, re
 
 **Outlined below are the key takeaways derived from the analysis of the data:**
 
+1. How does the box office perform?
+
+<br>
+
+- Finding the overall box office performance of RSVP Movies' productions in the past three years?
+
+```sql
+
+SELECT 
+  year,
+  SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS Total -- Cleaning all symbols before summation
+FROM all_info_table
+GROUP BY
+	year
+ORDER BY
+	Total DESC;
+
+```
+
+<div align="center">
+
+![Screenshot (21)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/51addd33-e501-440a-bfac-f39c8619c8cb)
+
+</div>
+
+
+
+
+
+[](Box_Office_Performance_By_Year_image)
+![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/360c3251-45f8-4735-84e6-c2d1e31c7c7a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
