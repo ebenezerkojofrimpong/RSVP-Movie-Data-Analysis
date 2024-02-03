@@ -226,9 +226,9 @@ A summary of the cleaning and manipulation done to the data is presented below:
 1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I will ignore the null values.
 2.	Added quarter, month, day_of_week and time_period columns to the Movie Table.
 3.	Converted the month column by assigning (1 - January and 12 - December)
-4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday)
+4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday).
 5.	Converted the duration column by assigning (Short - less than 90min, Standard - From 90min to 120min, and Long - Greater than 120min)
-6.	Combined the columns in all tables using INNER JOIN for analysis.
+6.	Created separate tables for director and character information by combining columns using INNER JOIN.
 
 <br>
 
@@ -349,45 +349,83 @@ CREATE TEMPORARY TABLE IF NOT EXISTS movie_converted AS
 
 <br>
 
-4. Combining the columns from all tables using INNER JOIN 
+4. Creating a table for director information by combining columns using INNER JOIN
 
 ```sql
 
--- Creating the final table for analysis
-DROP TABLE IF EXISTS movie_final;
-
-CREATE TABLE IF NOT EXISTS movie_final AS
+-- Creating a table for director information
+CREATE TABLE IF NOT EXISTS movie_director_table AS
 SELECT -- Combining all columns using INNER JOIN for final analysis
     MC.*,
-    DM.name_id AS director,
+    DM.name_id,
+    N.name AS director_name,
+    N.height,
+    N.date_of_birth,
     G.genre,
     R.avg_rating,
     R.total_votes,
-    R.median_rating,
-    RM.name_id,
-    RM.category,
-    N.name,
-    N.height,
-    N.date_of_birth,
-    N.known_for_movies
-FROM movie_converted MC 
+    R.median_rating
+FROM movie_converted MC
 INNER JOIN director_mapping DM ON MC.id = DM.movie_id
-INNER JOIN genre G ON MC.id = G.movie_id
-INNER JOIN ratings R ON MC.id = R.movie_id
-INNER JOIN role_mapping RM ON MC.id = RM.movie_id
-INNER JOIN names N ON RM.name_id = N.id;
+INNER JOIN names N ON DM.name_id = N.id
+INNER JOIN genre G ON DM.movie_id = G.movie_id
+INNER JOIN ratings R ON DM.movie_id = R.movie_id ;
 
 ```
 
-[](final_table_image)
+[](director_table_image)
 <div align = "center">
 
-![Screenshot (18)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/d1b30c78-9ce5-410d-8f30-b73dc9bab970)
+![Screenshot (19)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/47e41213-c94c-4023-ad18-68835e9a1ffb)
+
 
 </div>
 
+<br>
 
 
+
+5. Creating a table for character information by combining columns using INNER JOIN
+
+```sql
+
+-- Creating a table for character information
+CREATE TABLE IF NOT EXISTS movie_character_table AS
+SELECT -- Combining all columns using INNER JOIN for final analysis
+    MC.*,
+    RM.category,
+    N.name,    
+    N.height,
+    N.date_of_birth,
+    G.genre,
+    R.avg_rating,
+    R.total_votes,
+    R.median_rating
+FROM movie_converted MC
+INNER JOIN role_mapping RM ON MC.id = RM.movie_id
+INNER JOIN names N ON RM.name_id = N.id
+INNER JOIN genre G ON RM.movie_id = G.movie_id
+INNER JOIN ratings R ON G.movie_id = R.movie_id;
+
+```
+
+[](director_table_image)
+<div align = "center">
+
+![Screenshot (20)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ba7677b5-41c5-4c27-b70e-ef73ca9a88a6)
+
+
+</div>
+
+<br>
+
+## **ANALYZE**
+
+In this phase we analyze the data using statistical methods to find patterns, relationships, and trends.
+
+<br>
+
+**Outlined below are the key takeaways derived from the analysis of the data:**
 
 
 
