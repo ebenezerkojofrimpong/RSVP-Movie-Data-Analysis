@@ -89,10 +89,10 @@ Here are the key skills needed:
 ### SQL Skills:
 1. Data Modelling
 2. Writing SQL Queries
-3. Filtering and Sorting
-4. Data Transformation
-5. Performing Join operations
-6. performing Union operations
+3. Performing Join operations
+4. performing Union operations
+5. Filtering and Sorting
+6. Data Transformation
 7. Writing Sub-queries
 8. Grouping and Aggregation
 9. Exploratory Data Analysis (EDA)
@@ -228,7 +228,7 @@ A summary of the cleaning and manipulation done to the data is presented below:
 3.	Converted the month column by assigning (1 - January and 12 - December)
 4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday)
 5.	Converted the duration column by assigning (Short - less than 90min, Standard - From 90min to 120min, and Long - Greater than 120min)
-6.	Removed the start_lat, start_lng, end_lat and end_lng columns since we won't need them in the analysis.
+6.	Combined the columns in all tables using INNER JOIN for analysis.
 
 <br>
 
@@ -346,5 +346,48 @@ CREATE TEMPORARY TABLE IF NOT EXISTS movie_converted AS
 ![Screenshot (17)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/5b3cfe1a-545e-479a-ab64-61444827022a)
 
 </div>
+
+<br>
+
+4. Combining the columns from all tables using INNER JOIN 
+
+```sql
+
+-- Creating the final table for analysis
+DROP TABLE IF EXISTS movie_final;
+
+CREATE TABLE IF NOT EXISTS movie_final AS
+SELECT -- Combining all columns using INNER JOIN for final analysis
+	MC.*,
+    DM.name_id AS director,
+    G.genre,
+    R.avg_rating,
+    R.total_votes,
+    R.median_rating,
+    RM.name_id,
+    RM.category,
+    N.name,
+    N.height,
+    N.date_of_birth,
+    N.known_for_movies
+FROM movie_converted MC 
+INNER JOIN director_mapping DM ON MC.id = DM.movie_id
+INNER JOIN 	genre G ON MC.id = G.movie_id
+INNER JOIN ratings R ON MC.id = R.movie_id
+INNER JOIN role_mapping RM ON MC.id = RM.movie_id
+INNER JOIN names N ON RM.name_id = N.id;
+
+```
+
+[](final_table_image)
+<div align = "center">
+
+![Screenshot (18)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/d1b30c78-9ce5-410d-8f30-b73dc9bab970)
+
+</div>
+
+
+
+
 
 
