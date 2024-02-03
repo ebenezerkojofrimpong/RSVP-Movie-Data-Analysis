@@ -372,7 +372,7 @@ SELECT -- Combining all columns using INNER JOIN for final analysis
     N.known_for_movies
 FROM movie_converted MC 
 INNER JOIN director_mapping DM ON MC.id = DM.movie_id
-INNER JOIN 	genre G ON MC.id = G.movie_id
+INNER JOIN genre G ON MC.id = G.movie_id
 INNER JOIN ratings R ON MC.id = R.movie_id
 INNER JOIN role_mapping RM ON MC.id = RM.movie_id
 INNER JOIN names N ON RM.name_id = N.id;
