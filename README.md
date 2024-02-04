@@ -901,7 +901,7 @@ ORDER BY
 [](genre_performance_by_total_revenue_image)
 <div align = "center">
 
-![Genre Preference by Year and Total Votes](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6e283ed3-c490-47ed-bc80-9ae1d4c0fe0e)
+![Genre Preference by Year and Total Votes (1)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/52a0aa6e-81ab-4c5a-97d9-2a592bc2b700)
 
 
 </div>
