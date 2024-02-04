@@ -745,6 +745,54 @@ ORDER BY
 
 
 
+- What day of the week generates the highest box office revenue for movies?
+
+```sql
+
+SELECT 
+    day_of_week,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE  worldwide_gross_income IS NOT NULL
+GROUP BY 
+    day_of_week
+ORDER BY
+	total_revenue DESC;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (29)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/30529bbd-8794-4be9-b577-13bb8b587be2)
+
+
+</div>
+
+
+<br>
+
+
+[](box_office_performance_by_day_of_week_image)
+<div align = "center">
+
+![Box Office Performance By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/e0b48ede-06b8-4ba3-93a5-612d4c719c24)
+
+</div>
+
+
+---
+
+
+
+
+
+
+
+
+
 
 
 
