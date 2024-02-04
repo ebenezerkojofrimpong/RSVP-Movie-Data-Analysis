@@ -546,7 +546,7 @@ LIMIT 10;
 
 
 
-- How does RSVP Movies' box office performance compare with other production companies?
+- How does RSVP Movies' box office performance compare production companies?
 
 ```sql
 
