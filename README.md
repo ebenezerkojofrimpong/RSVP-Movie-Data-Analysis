@@ -779,7 +779,7 @@ ORDER BY
 [](total_revenue_by_day_of_week_image)
 <div align = "center">
 
-![Box Office Performance By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6b5f3761-8c81-4af1-b620-3732a59ae40a)
+![Total Revenue By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/783410b0-6da7-4aa2-b753-20d46abe8829)
 
 </div>
 
@@ -902,7 +902,7 @@ ORDER BY
 [](genre_performance_by_total_votes_segmented_by_year_image)
 <div align = "center">
 
-![Genre Performance By Total Votes Segmented By Year](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/9a780fd1-f4e4-4b4f-9eca-d2bb4366f2d0)
+![Genre Performance By Total Votes Segmented By Year](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c32496c6-d173-4a23-9f25-48fb4e847991)
 
 
 </div>
