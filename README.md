@@ -791,7 +791,145 @@ ORDER BY
 
 
 
+
+
+
+
+
+
+
+
+
 2. What factors contribute to the success of different movie genres?
+
+<br>
+
+
+
+
+- Which movie genres have consistently performed well for RSVP Movies?
+
+```sql
+
+SELECT 
+    genre,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE  worldwide_gross_income IS NOT NULL
+GROUP BY 
+    genre
+ORDER BY
+	total_revenue DESC;
+
+```
+
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (30)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/b2318647-f98b-42ad-9df5-f1d46ed607aa)
+
+
+</div>
+
+
+<br>
+
+
+[](genre_performance_by_total_revenue_image)
+<div align = "center">
+
+![Genre Performance By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/2a11e708-216a-40a9-82f3-35d779e417b1)
+
+
+</div>
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Are there emerging trends in audience preferences for specific genres?
+
+
+```sql
+
+SELECT 
+	year,
+    genre,
+    SUM(total_votes) AS total_votes
+FROM all_info_table
+WHERE  total_votes IS NOT NULL
+GROUP BY 
+	year,
+    genre
+ORDER BY
+	total_votes DESC;
+
+```
+
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (31)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/e43c0da0-1a8b-4d3d-8af6-dd03a107de7a)
+
+
+</div>
+
+
+<br>
+
+
+[](genre_performance_by_total_revenue_image)
+<div align = "center">
+
+![Genre Preference by Year and Total Votes](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6e283ed3-c490-47ed-bc80-9ae1d4c0fe0e)
+
+
+</div>
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
