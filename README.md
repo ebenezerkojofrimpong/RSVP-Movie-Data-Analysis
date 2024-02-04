@@ -38,7 +38,7 @@ These questions will guide the future marketing program:
     - Which movies have been the top performers in terms of box office revenue?
     - How does RSVP Movies' box office performance compare with production companies?
     - Are there significant differences in performance across different Countries?
-    - Have there been noticeable seasonal patterns in movie releases and their performance?
+    - Have there been noticeable seasonal patterns in Box Office performance?
     - How does a movie's box office performance vary between weekdays and weekends?
 
 
@@ -588,6 +588,8 @@ LIMIT 10;
 
 
 
+
+
 - Are there significant differences in performance across different Countries?
 
 ```sql
@@ -620,6 +622,7 @@ LIMIT 10;
 ![Top 10 Performing Countries By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/1fd62306-d6a1-4c23-9fec-51580d290447)
 </div>
 
+---
 
 
 
@@ -628,6 +631,41 @@ LIMIT 10;
 
 
 
+
+
+- Have there been noticeable seasonal patterns in Box Office performance?
+
+```sql
+
+SELECT 
+    DISTINCT year,
+    quarter_num AS quarter,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE  worldwide_gross_income IS NOT NULL
+GROUP BY 
+    year,
+    quarter_num
+ORDER BY
+	total_revenue DESC;
+
+
+```
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (26)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/93ebf0d7-9c6d-43bb-b42a-7612b087ef7f)
+
+</div>
+
+
+[](box_office_performance_by_year_and_quarter_image)
+<div align = "center">
+
+![Box Office Performance By Year and Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/102e9777-c44e-4ad3-8d29-cbad507bfba7)
+
+</div>
 
 
 
