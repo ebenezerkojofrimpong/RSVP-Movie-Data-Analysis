@@ -590,8 +590,35 @@ LIMIT 10;
 
 - Are there significant differences in performance across different Countries?
 
+```sql
+
+SELECT 
+	country,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE  worldwide_gross_income IS NOT NULL
+GROUP BY 
+	country
+ORDER BY
+	total_revenue DESC
+LIMIT 10;
+
+```
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (25)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/8abafdc3-3a8a-4166-a8db-b4e83cf35804)
+
+</div>
 
 
+
+[](top_10_performing_countries_image)
+<div align = "center">
+
+![Top 10 Performing Countries By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/1fd62306-d6a1-4c23-9fec-51580d290447)
+</div>
 
 
 
