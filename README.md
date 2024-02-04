@@ -447,6 +447,7 @@ ORDER BY
 
 ```
 
+<sql_image>
 <div align="center">
 
 ![Screenshot (21)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/51addd33-e501-440a-bfac-f39c8619c8cb)
@@ -455,8 +456,8 @@ ORDER BY
 
 <br>
 
-[](Box_Office_Performance_By_Year_image)
-![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/360c3251-45f8-4735-84e6-c2d1e31c7c7a)
+[](Total_Revenue_By_Year_image)
+![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c6bed034-a65c-454f-9c71-4e8a3649e796)
 
 
 ---
@@ -531,7 +532,7 @@ LIMIT 10;
 <div align = "center">
 
 [](top_10_performing_movies_image)
-![Top 10 Performing Movies By Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/4834d953-9aca-4694-a2eb-c757ae8f3cb6)
+![Top 10 Performing Movies By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/acf8c7c0-9a69-48ed-b440-83fd926e1314)
 
 
 </div>
@@ -664,10 +665,10 @@ ORDER BY
 <br>
 
 
-[](box_office_performance_by_year_and_quarter_image)
+[](total_revenue_by_year_segmented_by_quarter_image)
 <div align = "center">
-
-![Box Office Performance By Year and Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/5d1739e9-96c6-4a0e-ba9e-4d9e8d8b8446)
+	
+![Total Revenue By Year Segmented By Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c816aef0-bf43-485e-834c-bb014e314c04)
 
 </div>
 
@@ -719,10 +720,10 @@ ORDER BY
 <br>
 
 
-[](box_office_performance_by_time_period_image)
+[](Total_Revenue_by_time_period_image)
 <div align = "center">
 
-![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/f494275f-942f-4ff1-8c49-e8cd3a9e967e)
+![Dashboard 4](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/9d516a5c-6e4e-4e55-b3d4-a922f84d82c0)
 
 </div>
 
@@ -775,10 +776,10 @@ ORDER BY
 <br>
 
 
-[](box_office_performance_by_day_of_week_image)
+[](total_revenue_by_day_of_week_image)
 <div align = "center">
 
-![Box Office Performance By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/e0b48ede-06b8-4ba3-93a5-612d4c719c24)
+![Box Office Performance By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6b5f3761-8c81-4af1-b620-3732a59ae40a)
 
 </div>
 
@@ -898,10 +899,10 @@ ORDER BY
 <br>
 
 
-[](genre_performance_by_total_revenue_image)
+[](genre_performance_by_total_votes_segmented_by_year_image)
 <div align = "center">
 
-![Genre Preference by Year and Total Votes (1)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/52a0aa6e-81ab-4c5a-97d9-2a592bc2b700)
+![Genre Performance By Total Votes Segmented By Year](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/a55b574d-f264-4328-8176-012c6fca6d3c)
 
 
 </div>
