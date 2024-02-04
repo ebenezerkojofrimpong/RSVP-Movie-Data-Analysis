@@ -902,7 +902,7 @@ ORDER BY
 [](genre_performance_by_total_votes_segmented_by_year_image)
 <div align = "center">
 
-![Genre Performance By Total Votes Segmented By Year](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/a55b574d-f264-4328-8176-012c6fca6d3c)
+![Genre Performance By Total Votes Segmented By Year](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/9a780fd1-f4e4-4b4f-9eca-d2bb4366f2d0)
 
 
 </div>
