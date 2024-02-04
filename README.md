@@ -787,6 +787,13 @@ ORDER BY
 
 
 
+<br>
+
+
+
+2. What factors contribute to the success of different movie genres?
+
+
 
 
 
