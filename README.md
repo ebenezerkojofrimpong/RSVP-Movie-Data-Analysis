@@ -938,6 +938,118 @@ ORDER BY
 
 
 
+- What are the demographic characteristics of the audience for top performing movies?
+
+
+
+```sql
+
+SELECT DISTINCT
+	title,
+    country,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE  total_votes IS NOT NULL
+GROUP BY
+	title,
+    country
+ORDER BY
+	total_revenue DESC
+LIMIT 10;
+         
+
+```
+
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (32)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/44678dbc-fc27-4b00-aa25-7a97e7234418)
+
+
+</div>
+
+
+<br>
+
+
+[](top_10_movies_by_total_revenue_segmented_by_country_image)
+<div align = "center">
+
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/d14b9f2b-8a07-4207-a33b-4c359d965576)
+
+
+</div>
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
