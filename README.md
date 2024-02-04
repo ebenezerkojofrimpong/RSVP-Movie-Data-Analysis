@@ -40,6 +40,7 @@ These questions will guide the future marketing program:
     - Are there significant differences in performance across different Countries?
     - Have there been noticeable seasonal patterns in Box Office performance?
     - How does a movie's box office performance vary between weekdays and weekends?
+    - What day of the week generates the highest box office revenue for movies?
 
 
 2. What factors contribute to the success of different movie genres?
@@ -660,18 +661,73 @@ ORDER BY
 </div>
 
 
+<br>
+
+
 [](box_office_performance_by_year_and_quarter_image)
 <div align = "center">
 
-![Box Office Performance By Year and Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/102e9777-c44e-4ad3-8d29-cbad507bfba7)
+![Box Office Performance By Year and Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/5d1739e9-96c6-4a0e-ba9e-4d9e8d8b8446)
 
 </div>
 
 
+---
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+- How does a movie's box office performance vary between weekdays and weekends?
+
+```sql
+
+SELECT 
+    time_period,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE  worldwide_gross_income IS NOT NULL
+GROUP BY 
+    time_period
+ORDER BY
+	total_revenue DESC;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (27)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/0ccb5a14-acb3-4bca-a667-7801d7dc3a6b)
+
+</div>
+
+
+<br>
+
+
+[](box_office_performance_by_time_period_image)
+<div align = "center">
+
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/f494275f-942f-4ff1-8c49-e8cd3a9e967e)
+
+</div>
+
+
+---
 
 
 
