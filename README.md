@@ -516,7 +516,8 @@ LIMIT 10;
 <div align = "center">
 
 [](top_10_performing_movies_image)
-![Top 10 Performing Movies By Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/a121d5a4-374c-4735-ad31-99e002d8d915)
+![Top 10 Performing Movies By Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/4834d953-9aca-4694-a2eb-c757ae8f3cb6)
+
 
 </div>
 
