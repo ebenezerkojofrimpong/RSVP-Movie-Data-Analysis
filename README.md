@@ -47,8 +47,7 @@ These questions will guide the future marketing program:
     - Which movie genres have consistently performed well for RSVP Movies?
     - Are there emerging trends in audience preferences for specific genres?
     - What are the demographic characteristics of the audience for top performing movies?
-    - Are there patterns indicating peak viewing days for specific genres?
-    - Are there specific genres that perform better on weekdays or weekends?
+    - which day of the week demonstrates the highest revenue generation within the top performing Genres?
 
 3. How do movie ratings impact the overall success of RSVP Movies' production?
     - Have there been fluctuations in average ratings over the three-year period?
@@ -950,7 +949,7 @@ SELECT DISTINCT
     country,
 	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
 FROM all_info_table
-WHERE  total_votes IS NOT NULL
+WHERE  worldwide_gross_income IS NOT NULL
 GROUP BY
 	title,
     country
@@ -990,6 +989,71 @@ LIMIT 10;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- which day of the week demonstrates the highest revenue generation within the top performing Genres?
+
+
+
+```sql
+
+SELECT 
+	genre,
+    day_of_week,
+	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE worldwide_gross_income IS NOT NULL
+	AND genre IN ('adventure', 'action', 'drama', 'comedy', 'fantasy')
+GROUP BY
+	genre,
+    day_of_week
+ORDER BY
+	total_revenue DESC
+
+
+```
+
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (33)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c0c559d7-c8e3-40eb-a9dc-4e7ab1e05607)
+
+
+</div>
+
+
+<br>
+
+
+[](top_10_movies_by_total_revenue_segmented_by_country_image)
+<div align = "center">
+
+![Genre Performance By Total Revenue Segmented By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/12696f0e-4028-41c3-895f-c9f35fedc8e3)
+
+
+</div>
+
+
+---
 
 
 
