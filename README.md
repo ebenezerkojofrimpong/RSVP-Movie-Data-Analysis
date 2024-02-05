@@ -51,9 +51,7 @@ These questions will guide the future marketing program:
 
 3. How do movie ratings impact the overall success of RSVP Movies' production?
     - Have there been fluctuations in average ratings over the three-year period?
-    - Is there a consistent relationship between audience ratings and box office success?
     - Are there noticeable trends in the ratings of different genres?
-    - Do movies with higher ratings tend to attract larger audiences?
     - What insights can be gained from the median ratings of RSVP Movies' productions?
     - Are there instances where median ratings differ significantly from average ratings?
   
@@ -1123,6 +1121,7 @@ ORDER  BY
 
 
 
+<br>
 
 
 
@@ -1146,6 +1145,57 @@ ORDER  BY
 
 
 
+
+- Are there noticeable trends in the ratings of different genres?
+
+
+<br>
+
+
+
+
+```sql
+
+ SELECT 
+    year,
+    genre,
+    ROUND(AVG(avg_rating),2) AS average_rating
+FROM all_info_table
+WHERE avg_rating IS NOT NULL
+GROUP BY
+    year,
+    genre
+ORDER  BY
+    average_rating DESC;       
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (35)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/17efd0ef-7585-41be-867d-fd8c6cc5d10d)
+
+</div>
+
+
+<br>
+
+
+[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
+<div align = "center">
+
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ea0862c2-9348-44c4-bf7c-234aa1c339e4)
+
+</div>
+
+
+---
+
+
+
+<br>
 
 
 
