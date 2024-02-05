@@ -1015,21 +1015,20 @@ LIMIT 10;
 ```sql
 
 SELECT 
-	genre,
+    genre,
     day_of_week,
-	SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+    SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
 FROM all_info_table
 WHERE worldwide_gross_income IS NOT NULL
-	AND genre IN ('adventure', 'action', 'drama', 'comedy', 'fantasy')
+    AND genre IN ('adventure', 'action', 'drama', 'comedy', 'fantasy')
 GROUP BY
-	genre,
+    genre,
     day_of_week
 ORDER BY
 	total_revenue DESC
 
 
 ```
-
 
 
 [](sql_image)
@@ -1044,11 +1043,10 @@ ORDER BY
 <br>
 
 
-[](top_10_movies_by_total_revenue_segmented_by_country_image)
+[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
 <div align = "center">
 
-![Genre Performance By Total Revenue Segmented By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/12696f0e-4028-41c3-895f-c9f35fedc8e3)
-
+![Top 5 Genres By Total Revenue Segmented By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/54f12e31-fc5c-4e0a-8198-28b730589801)
 
 </div>
 
@@ -1056,6 +1054,72 @@ ORDER BY
 ---
 
 
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Have there been fluctuations in average ratings over the three-year period?
+
+<br>
+
+
+
+
+```sql
+
+SELECT 
+	year,
+	ROUND(AVG(avg_rating),2) AS average_rating
+FROM all_info_table
+WHERE avg_rating IS NOT NULL
+GROUP BY
+	year
+ORDER  BY
+	average_rating DESC;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (34)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/59b5f4ca-be6e-4223-a244-012bc908e559)
+
+</div>
+
+
+<br>
+
+
+[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
+<div align = "center">
+
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/422f2b16-6c40-4b98-8981-c0bbddfd90cf)
+
+</div>
+
+
+---
 
 
 
