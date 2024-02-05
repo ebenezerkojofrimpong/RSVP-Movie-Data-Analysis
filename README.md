@@ -1161,14 +1161,15 @@ ORDER BY
  SELECT 
     year,
     genre,
-    ROUND(AVG(avg_rating),2) AS average_rating
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes),2) AS average_rating
 FROM all_info_table
 WHERE avg_rating IS NOT NULL
 GROUP BY
     year,
     genre
 ORDER  BY
-    average_rating DESC;       
+    average_rating DESC;     
+       
 
 
 ```
@@ -1177,7 +1178,7 @@ ORDER  BY
 [](sql_image)
 <div align = "center">
 
-![Screenshot (35)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/17efd0ef-7585-41be-867d-fd8c6cc5d10d)
+![Screenshot (38)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/01ebc44d-fcdc-4491-bccc-78d34c0432ba)
 
 </div>
 
@@ -1188,7 +1189,7 @@ ORDER  BY
 [](average_rating_by_year_segmented_by_genre_image)
 <div align = "center">
 
-![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ea0862c2-9348-44c4-bf7c-234aa1c339e4)
+![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/34df9e9f-6658-48aa-8414-80ddbcdd7f62)
 
 </div>
 
