@@ -51,8 +51,8 @@ These questions will guide the future marketing program:
 
 3. How do movie ratings impact the overall success of RSVP Movies' production?
     - Have there been fluctuations in average ratings over the three-year period?
-    - Are there noticeable trends in the ratings of different genres?
-    - What insights can be gained from the median ratings of RSVP Movies' productions?
+    - Are there noticeable trends in the average ratings of different genres?
+    - How do median ratings compare across different genres?
     - Are there instances where median ratings differ significantly from average ratings?
   
 4. How do characters contribute to the overall performance and success of RSVP Movies' productions?
@@ -1146,7 +1146,7 @@ ORDER  BY
 
 
 
-- Are there noticeable trends in the ratings of different genres?
+- Are there noticeable trends in the average ratings of different genres?
 
 
 <br>
@@ -1183,7 +1183,7 @@ ORDER  BY
 <br>
 
 
-[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
+[](average_rating_by_year_segmented_by_genre_image)
 <div align = "center">
 
 ![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ea0862c2-9348-44c4-bf7c-234aa1c339e4)
@@ -1204,6 +1204,67 @@ ORDER  BY
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-  How do median ratings compare across different genres?
+
+
+<br>
+
+
+
+
+```sql
+
+    
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+
+
+</div>
+
+
+<br>
+
+
+[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
+<div align = "center">
+
+
+
+</div>
+
+
+---
+
+
+
+<br>
 
 
 
