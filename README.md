@@ -1085,14 +1085,11 @@ ORDER BY
 ```sql
 
 SELECT 
-	year,
-	ROUND(AVG(avg_rating),2) AS average_rating
+    year,
+    SUM(avg_rating * total_votes) / SUM(total_votes) AS average_rating
 FROM all_info_table
-WHERE avg_rating IS NOT NULL
 GROUP BY
-	year
-ORDER  BY
-	average_rating DESC;
+	year;
 
 
 ```
@@ -1109,10 +1106,11 @@ ORDER  BY
 <br>
 
 
-[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
+[](average_rating_by_year_image)
 <div align = "center">
 
-![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/422f2b16-6c40-4b98-8981-c0bbddfd90cf)
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/257c2aca-475c-4462-a475-3d8bee1afe97)
+
 
 </div>
 
