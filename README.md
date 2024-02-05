@@ -1073,12 +1073,15 @@ ORDER BY
 
 
 
+3. How do movie ratings impact the overall success of RSVP Movies' production?
 
-
-3. Have there been fluctuations in average ratings over the three-year period?
 
 <br>
 
+
+
+
+ - Have there been fluctuations in average ratings over the three-year period?
 
 
 
@@ -1086,10 +1089,12 @@ ORDER BY
 
 SELECT 
     year,
-    SUM(avg_rating * total_votes) / SUM(total_votes) AS average_rating
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes),2) AS average_rating
 FROM all_info_table
 GROUP BY
-	year;
+    year
+ORDER BY
+    average_rating DESC;
 
 
 ```
@@ -1098,7 +1103,7 @@ GROUP BY
 [](sql_image)
 <div align = "center">
 
-![Screenshot (34)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/59b5f4ca-be6e-4223-a244-012bc908e559)
+![Screenshot (37)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/52520574-96b7-4953-a74b-66becab1c3cc)
 
 </div>
 
@@ -1109,8 +1114,7 @@ GROUP BY
 [](average_rating_by_year_image)
 <div align = "center">
 
-![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/257c2aca-475c-4462-a475-3d8bee1afe97)
-
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/00f64fdb-529d-41a5-a1cf-d1eb11c5f888)
 
 </div>
 
