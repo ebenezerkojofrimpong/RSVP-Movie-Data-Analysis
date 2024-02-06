@@ -54,20 +54,24 @@ These questions will guide the future marketing program:
     - Are there noticeable trends in the average ratings of different genres?
     - Which movies have the highest average ratings?
     - Do movies with English language generally receive higher average ratings compared to movies in other languages?
-  
-4. How do characters contribute to the overall performance and success of RSVP Movies' productions?
-    - Which characters have consistently performed well in terms of box office success?
-    - Are there specific characters associated with high-rated movies?
-  
-5. How do the directors impact the success of RSVP Movies' films?
-    - How do different directors contribute to the overall success of RSVP Movies' films?
-    - What is the distribution of box office performance across different directors?
-  
-6. How does movie duration contribute to the success of RSVP Movies' productions?
+
+4. How does movie duration contribute to the success of RSVP Movies' productions?
     - Have movies become longer or shorter over time?
     - Are high performing genres associated with longer or shorter movies?
     - Are movies from specific regions consistently longer or shorter?
     - Do viewers tend to prefer shorter or longer movies?
+  
+5. How do characters contribute to the overall performance and success of RSVP Movies' productions?
+    - What are the details of the top performing actors?
+    - What are the details of the top performing actresses
+    - Are there any actors/actresses who consistently appear in top-rated movies?
+
+6. How do the directors impact the success of RSVP Movies' films?
+    - What are the details of the top performing directors?	
+    - How do different directors contribute to the overall success of RSVP Movies' films?
+   
+  
+
   
 
       
@@ -1385,6 +1389,8 @@ Movies With English Language                                                    
 
 
 
+
+
 <br>
 
 
@@ -1413,6 +1419,37 @@ Movies With English Language                                                    
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. How do characters contribute to the overall performance and success of RSVP Movies' productions?
+
+
+<br>
+
+
+
+
+- Which characters have consistently performed well in terms of box office success?
 
 
 
