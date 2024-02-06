@@ -1266,10 +1266,10 @@ LIMIT 10;
 <br>
 
 
-[](average_rating_by_year_segmented_by_genre_image)
+[](top_10_movies_by_average_rating_image)
 <div align = "center">
 
-![Top 10 Movies By Average Rating](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/0c5dfcdd-1901-40c0-86ce-8f6d041656fd)
+![Top 10 Movies By Average Rating](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6d68c1b5-f95e-44e1-9582-a9bc81662a19)
 
 
 </div>
