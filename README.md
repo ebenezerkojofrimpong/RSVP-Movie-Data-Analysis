@@ -69,9 +69,7 @@ These questions will guide the future marketing program:
     - Are movies from specific regions consistently longer or shorter?
     - Do viewers tend to prefer shorter or longer movies?
   
-7. How does language contribute to the diversity and evolution of films within the dataset?
-    - Which languages are most prevalent in the dataset?
-    - Are high performing genres associated with a particular set of languages?
+
       
 <br>
 
