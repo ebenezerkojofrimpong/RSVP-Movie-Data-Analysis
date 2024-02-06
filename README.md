@@ -1228,7 +1228,7 @@ ORDER  BY
 
 
 
--  How do median ratings compare across different genres?
+-  Do movies with English language generally receive higher average ratings compared to movies in other languages?
 
 
 <br>
@@ -1238,8 +1238,37 @@ ORDER  BY
 
 ```sql
 
+ SELECT -- Movies with English Language
+    title,
+    languages,
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes),2) AS average_rating
+FROM all_info_table
+WHERE avg_rating IS NOT NULL
+    AND languages LIKE '%English%'
+GROUP BY
+    title,
+    languages
+ORDER  BY
+    average_rating DESC     
+LIMIT 10;    
     
 
+
+ 
+    
+SELECT -- Movies with no English Language
+    title,
+    languages,
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes),2) AS average_rating
+FROM all_info_table
+WHERE avg_rating IS NOT NULL
+    AND languages NOT LIKE '%English%'
+GROUP BY
+    title,
+    languages
+ORDER  BY
+    average_rating DESC    
+LIMIT 10;
 
 ```
 
@@ -1258,20 +1287,15 @@ ORDER  BY
                                                                                                         
 
 
+[](average_rating_by_language_segmented_by_movie_image)
+
+Movies With English Language                                                                                                                  |  Movies With Non-English Language		     
+:-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
+![Screenshot (39)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fbf7ce3e-bc60-4017-a8cc-b60bdb64f633)    |    ![Screenshot (40)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/cfcad8a5-7073-4af8-8b7c-c1f750594d8f)
+          
 
 
 
-
-
-
-
-
-[](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
-<div align = "center">
-
-
-
-</div>
 
 
 ---
