@@ -57,8 +57,8 @@ These questions will guide the future marketing program:
 
 4. How does movie duration contribute to the success of RSVP Movies' productions?
     - Have movies become longer or shorter over time?
-    - Are high performing genres associated with longer or shorter movies?
-    - Are movies from specific regions consistently longer or shorter?
+    - Are high performing movies usually longer or shorter?
+    - Are movies from specific countries consistently longer or shorter?
     - Do viewers tend to prefer shorter or longer movies?
   
 5. How do characters contribute to the overall performance and success of RSVP Movies' productions?
@@ -1420,28 +1420,7 @@ Movies With English Language                                                    
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4. How do characters contribute to the overall performance and success of RSVP Movies' productions?
+4. How does movie duration contribute to the success of RSVP Movies' productions?
 
 
 <br>
@@ -1449,8 +1428,209 @@ Movies With English Language                                                    
 
 
 
-- Which characters have consistently performed well in terms of box office success?
 
+- Have movies become longer or shorter over time?
+    
+```sql
+
+ SELECT
+	year,
+    SUM(duration1) AS total_duration
+FROM all_info_table
+GROUP BY
+	year;
+       
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (42)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ada8ba9f-6d2b-43f7-a0fa-8a92db4673a8)
+
+</div>
+
+
+<br>
+
+
+[](total_duration_by_year_image)
+<div align = "center">
+
+![Dashboard 7](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/93d14409-7512-4b28-bd41-c9d318827f20)
+
+
+</div>
+
+
+---
+
+
+
+<br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     
+     
+     
+
+
+
+
+
+
+
+
+
+- Are high performing movies usually longer or shorter?
+   
+
+
+<br>
+
+
+
+    
+```sql
+
+SELECT
+    title,
+    duration,
+    SUM(REPLACE(REPLACE(worldwide_gross_income, '$', ''), ',', '')) AS total_revenue -- Cleaning all symbols before summation
+FROM all_info_table
+WHERE worldwide_gross_income IS NOT NULL
+GROUP BY
+    title,
+    duration
+ORDER BY
+    total_revenue DESC
+LIMIT 10;
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (43)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/691f3bef-baf9-4613-ae42-b6bd6e2e78ec)
+
+</div>
+
+
+<br>
+
+
+[](top_10_movies_by_total_revenue_segmented_by_duration_image)
+<div align = "center">
+
+![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fec4e6d7-cac2-402c-bf47-0242e0f22780)
+
+
+</div>
+
+
+---
+
+
+
+<br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+- Are movies from specific regions consistently longer or shorter?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Do viewers tend to prefer shorter or longer movies?
 
 
 
