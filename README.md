@@ -1582,8 +1582,91 @@ LIMIT 10;
      
      
      
-- Are movies from specific regions consistently longer or shorter?
+- How does the duration of top-rated movies compare between those produced in the USA and those produced outside the USA? 
 
+
+<br>
+
+
+
+
+```sql
+
+ SELECT -- Selecting top 10 movies produced in the USA
+	title,
+    country,
+    duration,
+    SUM(total_votes) AS total_votes
+FROM all_info_table
+WHERE 
+	country LIKE '%USA%'    
+GROUP BY   
+	title,
+    country,
+    duration
+ORDER BY
+	total_votes DESC
+LIMIT 10;
+    
+
+
+
+SELECT -- Selecting top 10 movies produced outside the USA
+	title,
+    country,
+    duration,
+    SUM(total_votes) AS total_votes
+FROM all_info_table
+WHERE 
+	country NOT LIKE '%USA%'    
+GROUP BY   
+	title,
+    country,
+    duration
+ORDER BY
+	total_votes DESC    
+LIMIT 10;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+Movies Produced In USA                                                                                                                       |   Movies Produced Outside USA
+:------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------:
+![Screenshot (44)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/73087665-fc1d-430a-924b-8b216d5a1b03)   |   ![Screenshot (45)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/664fe297-0a7f-4038-8e36-d7af7507d866)
+
+
+
+          
+
+</div>
+
+
+<br>
+
+
+
+                                                                                                     
+
+[](top_10_USA_and_Non_USA_movies_by_total_duration__image)
+<div align = "center">
+
+![Dashboard 8](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/b6744059-0746-43a5-be5c-2920a5af2fde)
+
+</div>
+
+
+
+---
+
+
+
+
+
+<br>
 
 
 
