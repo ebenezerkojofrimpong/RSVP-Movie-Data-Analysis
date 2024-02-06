@@ -1228,6 +1228,90 @@ ORDER  BY
 
 
 
+
+
+- Which movies have the highest average ratings?
+
+
+<br>
+
+
+
+
+```sql
+
+ SELECT -- Movies with English Language
+	title,
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes),2) AS average_rating
+FROM all_info_table
+WHERE avg_rating IS NOT NULL
+GROUP BY
+	title
+ORDER  BY
+    average_rating DESC    
+LIMIT 10;         
+       
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (41)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/20649cf0-a7e3-43ee-a6b0-f69950acc1eb)
+
+</div>
+
+
+<br>
+
+
+[](average_rating_by_year_segmented_by_genre_image)
+<div align = "center">
+
+![Top 10 Movies By Average Rating](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/0c5dfcdd-1901-40c0-86ce-8f6d041656fd)
+
+
+</div>
+
+
+---
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -  Do movies with English language generally receive higher average ratings compared to movies in other languages?
 
 
@@ -1292,8 +1376,7 @@ Movies With English Language                                                    
 [](average_rating_by_language_segmented_by_movie_image)
 <div align = "center">
 
-![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/0a36b6c0-95b7-40aa-b997-aa7ac7ba6dcc)
-
+![Dashboard 6](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c11c4cdf-d9f9-42fc-8b00-07c7831709d9)
 
 
 </div>
