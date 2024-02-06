@@ -52,8 +52,8 @@ These questions will guide the future marketing program:
 3. How do movie ratings impact the overall success of RSVP Movies' production?
     - Have there been fluctuations in average ratings over the three-year period?
     - Are there noticeable trends in the average ratings of different genres?
-    - How do median ratings compare across different genres?
-    - Are there instances where median ratings differ significantly from average ratings?
+    - Which movies have the highest average ratings?
+    - Do movies with English language generally receive higher average ratings compared to movies in other languages?
   
 4. How do characters contribute to the overall performance and success of RSVP Movies' productions?
     - Which characters have consistently performed well in terms of box office success?
@@ -1253,6 +1253,17 @@ ORDER  BY
 
 
 <br>
+
+
+                                                                                                        
+
+
+
+
+
+
+
+
 
 
 [](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
