@@ -58,7 +58,7 @@ These questions will guide the future marketing program:
 4. How does movie duration contribute to the success of RSVP Movies' productions?
     - Have movies become longer or shorter over time?
     - Are high performing movies usually longer or shorter?
-    - Are movies from specific countries consistently longer or shorter?
+    - How does the duration of top-rated movies compare between those produced in the USA and those produced outside the USA? 
     - Do viewers tend to prefer shorter or longer movies?
   
 5. How do characters contribute to the overall performance and success of RSVP Movies' productions?
