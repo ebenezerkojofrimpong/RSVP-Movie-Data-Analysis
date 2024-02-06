@@ -1276,7 +1276,10 @@ LIMIT 10;
 [](sql_image)
 <div align = "center">
 
-
+Movies With English Language                                                                                                                  |  Movies With Non-English Language		     
+:-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
+![Screenshot (39)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fbf7ce3e-bc60-4017-a8cc-b60bdb64f633)    |    ![Screenshot (40)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/cfcad8a5-7073-4af8-8b7c-c1f750594d8f)
+          
 
 </div>
 
@@ -1286,15 +1289,14 @@ LIMIT 10;
 
                                                                                                         
 
-
 [](average_rating_by_language_segmented_by_movie_image)
+<div align = "center">
 
-Movies With English Language                                                                                                                  |  Movies With Non-English Language		     
-:-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
-![Screenshot (39)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fbf7ce3e-bc60-4017-a8cc-b60bdb64f633)    |    ![Screenshot (40)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/cfcad8a5-7073-4af8-8b7c-c1f750594d8f)
-          
+![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/0a36b6c0-95b7-40aa-b997-aa7ac7ba6dcc)
 
 
+
+</div>
 
 
 
