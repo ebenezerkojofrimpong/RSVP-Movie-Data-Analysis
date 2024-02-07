@@ -24,6 +24,9 @@ We will address this case using the following methodology:
 
 `ASK, PREPARE, PROCESS, ANALYSE, SHARE AND ACT`
 
+<br>
+
+
 
 ## **ASK**
 This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
@@ -77,7 +80,7 @@ These questions will guide the future marketing program:
 <br>
 
 ## Business Task
-The primary goal is to extract actionable insights and provide strategic recommendations for RSVP Movies.
+The primary goal of this project is to extract actionable insights and provide strategic recommendations for RSVP Movies.
 
 
 ## Skills / Concepts Applied
@@ -88,13 +91,12 @@ Here are the key skills needed:
 ### SQL Skills:
 1. Data Modelling
 2. Writing SQL Queries
-3. Performing Join operations
-4. performing Union operations
-5. Filtering and Sorting
-6. Data Transformation
-7. Writing Sub-queries
-8. Grouping and Aggregation
-9. Exploratory Data Analysis (EDA)
+3. Performing Join and Union operations
+4. Filtering and Sorting
+5. Data Transformation
+6. Writing Sub-queries
+7. Grouping and Aggregation
+8. Exploratory Data Analysis (EDA)
 
 
 ### Tableau Skills:
@@ -103,8 +105,8 @@ Here are the key skills needed:
 3. Calculated Fields
 4. Dashboard Creation
 5. Filtering and Sorting
-6. Mapping and Geographic Analysis
 
+<br>
 
 ## Key Stakeholders
 - **RSVP Movies marketing analytics team**: A team of data analysts who are responsible for collecting, analyzing, and reporting
@@ -122,9 +124,12 @@ Involves collecting data and information and ensuring it satisfies necessary par
 
 ### Modelling
 ERD diagram for RSVP:
+
+
 ![](ERD_image)
 ![download](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/44f5ae39-4492-43c6-a389-048fc509c212)
 
+<br>
 
 ### Data Location
 Kindly follow the link to download file that contains data to create database.
@@ -133,6 +138,8 @@ Kindly follow the link to download file that contains data to create database.
 
 ### Data Organization
 The dataset contains 6 separate tables with 75873 observations in all.
+
+<br>
 
 The Query below shows the total number of observations / rows in each table.
 
@@ -222,16 +229,18 @@ This phase of the analysis process includes cleaning the data and making sure it
 
 A summary of the cleaning and manipulation done to the data is presented below:
 
-1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I will ignore the null values.
+1.	Removing 4,466 Null values from the Movie Table will reduce the number of Observations from 7997  to 3531 hence I maintained the null values.
 2.	Added quarter, month, day_of_week and time_period columns to the Movie Table.
 3.	Converted the month column by assigning (1 - January and 12 - December)
 4.	Converted the day_of_week column by assigning (1 - Sunday and 7 - Saturday).
 5.	Converted the duration column by assigning (Short - less than 90min, Standard - From 90min to 120min, and Long - Greater than 120min)
-6.	Created separate tables for director and character information by combining columns using INNER JOIN.
+6.	Created separate tables to answer director and character specific quesions and a separate table to answer general questions by combining columns using INNER JOIN.
 
 <br>
 
 The Data Cleaning Process:
+
+<br>
 
 1. Checking all Null values in the Movie Table
 
@@ -258,6 +267,12 @@ FROM movie;
 ![Screenshot (14)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/543969d7-5ea8-45e9-b991-2e3d8bab8bf6)
 
 </div>
+
+<br>
+
+
+
+
 
 
 2. Adding quarter, month and day_of_week columns to the Movie Table.
@@ -293,6 +308,12 @@ FROM movie;
 </div>
 
 <br>
+
+
+
+
+
+
 
 3. Converting month, day_of_week, time_period,  and duration columns alongside adding time_period column to the Movie Table.
 
@@ -348,7 +369,50 @@ CREATE TEMPORARY TABLE IF NOT EXISTS movie_converted AS
 
 <br>
 
-4. Creating a table for director information by combining columns using INNER JOIN
+
+
+
+
+4. Creating a table to answer general questions by combining columns using the INNER JOIN operation
+
+```sql
+
+CREATE TABLE IF NOT EXISTS all_info_table AS
+SELECT -- Combining all columns using INNER JOIN for final analysis
+	MC.*,
+    DM.name_id,
+    N.name AS director_name,
+    N.height,
+    N.date_of_birth,
+    G.genre,
+    R.avg_rating,
+    R.total_votes,
+    R.median_rating,
+    RM.category
+FROM movie_converted MC
+INNER JOIN director_mapping DM ON MC.id = DM.movie_id
+INNER JOIN names N ON DM.name_id = N.id
+INNER JOIN genre G ON DM.movie_id = G.movie_id
+INNER JOIN ratings R ON DM.movie_id = R.movie_id
+INNER JOIN role_mapping RM ON R.movie_id = RM.movie_id ;
+
+
+```
+
+[](all_info_table_image)
+<div align = "center">
+
+![Screenshot (54)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ccdd9785-edca-4dca-a5e9-820d66061baa)
+
+</div>
+
+<br>
+
+
+
+
+
+5. Creating a table to answer director specific questions by joining columns using the INNER JOIN operation
 
 ```sql
 
@@ -384,7 +448,7 @@ INNER JOIN ratings R ON DM.movie_id = R.movie_id ;
 
 
 
-5. Creating a table for character information by combining columns using INNER JOIN
+5. Creating a table to answer character specific questions by joining columns using the INNER JOIN operation
 
 ```sql
 
