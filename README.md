@@ -1871,25 +1871,58 @@ Interact with full list of actresses here [Tableau](https://public.tableau.com/v
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - Are there any actors/actresses who consistently appear in top-rated movies?
 
 
+<br>
+
+
+
+    
+```sql
+
+SELECT -- Selecting top 5 movies by total_votes
+	title,
+    name,
+	SUM(total_votes) AS total_votes
+FROM movie_character_table
+GROUP BY
+	title,
+    name
+HAVING
+	total_votes > 1521519
+ORDER BY
+	total_votes DESC;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (50)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6861d3ac-9318-4c17-8354-1b8fa50a67c9)
+
+</div>
+
+
+<br>
+
+
+[](top_5_movies_by_total_votes_segmented_by_cast_image)
+<div align = "center">
+
+![Dashboard 3](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/1d526537-0008-4447-9794-a24c3c7cce03)
+
+</div>
+
+
+
+---
+
+
+
+<br>
 
 
 
