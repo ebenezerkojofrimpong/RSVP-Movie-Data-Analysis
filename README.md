@@ -448,7 +448,7 @@ INNER JOIN ratings R ON DM.movie_id = R.movie_id ;
 
 
 
-5. Creating a table to answer character specific questions by joining columns using the INNER JOIN operation
+6. Creating a table to answer character specific questions by joining columns using the INNER JOIN operation
 
 ```sql
 
@@ -480,7 +480,12 @@ INNER JOIN ratings R ON G.movie_id = R.movie_id;
 
 </div>
 
+
 <br>
+
+
+
+
 
 ## **ANALYZE**
 
