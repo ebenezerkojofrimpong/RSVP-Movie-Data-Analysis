@@ -67,7 +67,7 @@ These questions will guide the future marketing program:
 
 6. How do the directors impact the success of RSVP Movies' films?
     - What are the details of the top performing directors?	
-    - How do different directors contribute to the overall success of RSVP Movies' films?
+    - Are there any directors who consistently appear in top-rated movies?
    
   
 
