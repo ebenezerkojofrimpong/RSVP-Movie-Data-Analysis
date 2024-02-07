@@ -1764,6 +1764,82 @@ HAVING
 
 
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ - What are the details of the top performing actresses?
+
+
+<br>
+
+
+
+    
+```sql
+
+SELECT 
+    name AS actress_name,
+    SUM(total_votes) AS total_votes,
+    COUNT(id) AS movie_count,
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes), 2) AS average_rating,
+    ROW_NUMBER() OVER (ORDER BY  ROUND(SUM(avg_rating * total_votes) / SUM(total_votes), 2) DESC) AS actress_rank
+FROM movie_character_table
+WHERE
+    category = "actress"
+GROUP BY
+    actress_name
+HAVING 
+    movie_count >=5;
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (48)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/2e6b5e13-2233-4dd3-b246-2d058734b212)
+
+</div>
+
+
+<br>
+
+
+[](rank_of_actresses_by_average_rating_image)
+<div align = "center">
+
+![Screenshot (49)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/7dcee033-6aea-4920-9d69-fc2044fe0d7f)
+
+</div>
+
+
+---
+
+
+
+<br>
 
 
 
@@ -1785,8 +1861,25 @@ HAVING
 
 
 
-    - What are the details of the top performing actresses?
-    - Are there any actors/actresses who consistently appear in top-rated movies?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Are there any actors/actresses who consistently appear in top-rated movies?
 
 
 
