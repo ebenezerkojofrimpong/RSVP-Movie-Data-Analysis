@@ -1752,7 +1752,7 @@ HAVING
 
 
 
-Interact with full list of actors here [Tableau](https://public.tableau.com/views/RankOfActorsByAverageRating/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+Interact with full list of top actors here [Tableau](https://public.tableau.com/views/RankOfActorsByAverageRating/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
 ---
@@ -1803,7 +1803,7 @@ Interact with full list of actors here [Tableau](https://public.tableau.com/view
     
 ```sql
 
-SELECT 
+SELECT -- Focusing on actresses with movie count greater than or equal to 5
     name AS actress_name,
     SUM(total_votes) AS total_votes,
     COUNT(id) AS movie_count,
@@ -1840,7 +1840,7 @@ HAVING
 
 
 
-Interact with full list of actresses here [Tableau](https://public.tableau.com/views/RankOfActressesByAverageRating/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
+Interact with full list of top actresses here [Tableau](https://public.tableau.com/views/RankOfActressesByAverageRating/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
 ---
@@ -1936,6 +1936,177 @@ ORDER BY
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6. How do the directors impact the success of RSVP Movies' films?
+
+
+
+<br>
+
+
+
+
+
+
+- What are the details of the top performing directors?
+
+
+<br>
+
+
+
+    
+```sql
+
+SELECT -- Focusing directors with number of movies greater than or equal to 5
+    director_name, 
+    SUM(total_votes) AS total_votes,
+    COUNT(id) AS number_of_movies,
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes), 2) AS average_rating,
+    MIN(avg_rating) AS min_rating,
+    MAX(avg_rating) AS max_rating,
+    ROW_NUMBER() OVER (ORDER BY  ROUND(SUM(avg_rating * total_votes) / SUM(total_votes), 2) DESC) AS director_rank
+FROM movie_director_table
+GROUP BY
+    director_name
+HAVING 
+    number_of_movies >=5;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (51)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/68093f86-2223-403a-941b-e88a473306ff)
+
+</div>
+
+
+<br>
+
+
+[](rank_of_directors_by_rating_image)
+<div align = "center">
+
+![Screenshot (52)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/de028c46-d1f9-4ae9-95f0-dadb6d3377d3)
+
+</div>
+
+
+
+Interact with full list of top directors here [Tableau](https://public.tableau.com/views/RankOfDirectorsByAverageRating/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+
+---
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Are there any directors who consistently appear in top-rated movies?
+
+<br>
+
+
+
+    
+```sql
+
+SELECT -- Selecting top 10 movies by total_votes
+    title,
+    director_name,
+    SUM(total_votes) AS total_votes
+FROM movie_director_table
+GROUP BY
+    title,
+    director_name
+HAVING
+    total_votes >= 1037310
+ORDER BY
+    total_votes DESC;
+
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (53)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/78709815-1983-4f3e-a3fe-20ca55d2474f)
+
+</div>
+
+
+<br>
+
+
+[](top_10_movies_by_total_votes_segmented_by_director_name_image)
+<div align = "center">
+
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/edcc284a-4a2c-4ce4-83c6-128624cce029)
+
+</div>
+
+
+
+---
+
+
+
+<br>
 
 
 
