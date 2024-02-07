@@ -59,11 +59,10 @@ These questions will guide the future marketing program:
     - Have movies become longer or shorter over time?
     - Are high performing movies usually longer or shorter?
     - How does the duration of top-rated movies compare between those produced in the USA and those produced outside the USA? 
-    - Do viewers tend to prefer shorter or longer movies?
   
 5. How do characters contribute to the overall performance and success of RSVP Movies' productions?
     - What are the details of the top performing actors?
-    - What are the details of the top performing actresses
+    - What are the details of the top performing actresses?
     - Are there any actors/actresses who consistently appear in top-rated movies?
 
 6. How do the directors impact the success of RSVP Movies' films?
@@ -1696,6 +1695,68 @@ Movies Produced In USA                                                          
 
 
 
+5. How do characters contribute to the overall performance and success of RSVP Movies' productions?
+
+
+
+<br>
+
+
+
+
+
+- What are the details of the top performing actors?
+
+
+<br>
+
+
+
+    
+```sql
+
+SELECT -- Focusing on actors with movie count greater than or equal to 5
+    name AS actor_name,
+    SUM(total_votes) AS total_votes,
+    COUNT(id) AS movie_count,
+    ROUND(SUM(avg_rating * total_votes) / SUM(total_votes), 2) AS average_rating,
+    ROW_NUMBER() OVER (ORDER BY  ROUND(SUM(avg_rating * total_votes) / SUM(total_votes), 2) DESC) AS actor_rank
+FROM movie_character_table
+WHERE
+   category = "actor"
+GROUP BY
+   actor_name
+HAVING 
+   movie_count >=5;
+
+```
+
+
+[](sql_image)
+<div align = "center">
+
+![Screenshot (43)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/691f3bef-baf9-4613-ae42-b6bd6e2e78ec)
+
+</div>
+
+
+<br>
+
+
+[](top_10_movies_by_total_revenue_segmented_by_duration_image)
+<div align = "center">
+
+![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fec4e6d7-cac2-402c-bf47-0242e0f22780)
+
+
+</div>
+
+
+---
+
+
+
+<br>
 
 
 
@@ -1713,7 +1774,48 @@ Movies Produced In USA                                                          
 
 
 
-- Do viewers tend to prefer shorter or longer movies?
+
+
+
+
+
+
+
+
+
+
+
+
+    - What are the details of the top performing actresses?
+    - Are there any actors/actresses who consistently appear in top-rated movies?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
