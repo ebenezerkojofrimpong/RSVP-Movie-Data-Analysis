@@ -1751,7 +1751,9 @@ HAVING
 </div>
 
 
+
 Interact with full list of actors here [Tableau](https://public.tableau.com/views/RankOfActorsByAverageRating/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+
 
 ---
 
