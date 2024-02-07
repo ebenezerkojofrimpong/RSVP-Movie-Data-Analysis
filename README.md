@@ -1735,7 +1735,7 @@ HAVING
 [](sql_image)
 <div align = "center">
 
-![Screenshot (43)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/691f3bef-baf9-4613-ae42-b6bd6e2e78ec)
+![Screenshot (46)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/7394cfda-4f18-49b2-b70e-c31a0c728540)
 
 </div>
 
@@ -1743,11 +1743,10 @@ HAVING
 <br>
 
 
-[](top_10_movies_by_total_revenue_segmented_by_duration_image)
+[](rank_of_actors_by_average_rating_image)
 <div align = "center">
 
-![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fec4e6d7-cac2-402c-bf47-0242e0f22780)
-
+![Screenshot (47)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ad838493-8ddc-4f45-8e51-e0a1848a271d)
 
 </div>
 
