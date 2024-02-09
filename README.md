@@ -524,7 +524,7 @@ ORDER BY
 <br>
 
 [](Total_Revenue_By_Year_image)
-![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c6bed034-a65c-454f-9c71-4e8a3649e796)
+![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/23d03b84-d30f-43c7-80c8-f2eb4902216a)
 
 
 ---
@@ -558,7 +558,7 @@ FROM all_info_table;
 <div align="center">
 
 [](total_revenue_image)
-![Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/480cc8ea-06f2-44c3-8486-7a9e2f31286d)
+![Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/7486551d-2689-41cf-bbe0-5e1a10f51b76)
 
 </div>
 
@@ -598,8 +598,8 @@ LIMIT 10;
 
 <div align = "center">
 
-[](top_10_performing_movies_image)
-![Top 10 Performing Movies By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/acf8c7c0-9a69-48ed-b440-83fd926e1314)
+[](top_10_movies_image)
+![Top 10 Movies By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ce7ba44d-7e4d-472b-84d4-f1ec46619a6b)
 
 
 </div>
@@ -641,10 +641,10 @@ LIMIT 10;
 
 <br>
 
-[](top_10_production_companies_image)
+[](top_10_production_companies_by_total_revenue_image)
 <div align = "center">
 
-![Top 10 Production Companies By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/f050f95c-44b7-4a39-b682-b150116a96e4)
+![Top 10 Production Companies By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/e9f3c5bd-72e4-468f-9722-a4e6c1aabfe8)
 
 </div>
 
@@ -685,10 +685,11 @@ LIMIT 10;
 
 
 
-[](top_10_performing_countries_image)
+[](top_10_countries_by_total_revenue_image)
 <div align = "center">
 
-![Top 10 Performing Countries By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/1fd62306-d6a1-4c23-9fec-51580d290447)
+![Top 10 Countries By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/90689138-187d-4a17-83ca-017a787cf2c1)
+
 </div>
 
 ---
@@ -735,7 +736,7 @@ ORDER BY
 [](total_revenue_by_year_segmented_by_quarter_image)
 <div align = "center">
 	
-![Total Revenue By Year Segmented By Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c816aef0-bf43-485e-834c-bb014e314c04)
+![Total Revenue By Year Segmented By Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/5ddd0bdc-53de-40ab-bdd1-dfdb5171b051)
 
 </div>
 
@@ -790,7 +791,7 @@ ORDER BY
 [](Total_Revenue_by_time_period_image)
 <div align = "center">
 
-![Dashboard 4](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/9d516a5c-6e4e-4e55-b3d4-a922f84d82c0)
+![Total Revenue By Time Period](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/cfead6ee-47b7-408b-ad36-182fc84776ce)
 
 </div>
 
@@ -846,7 +847,7 @@ ORDER BY
 [](total_revenue_by_day_of_week_image)
 <div align = "center">
 
-![Total Revenue By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/783410b0-6da7-4aa2-b753-20d46abe8829)
+![Total Revenue By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/ef45fb02-4121-443d-bcf8-693fc7fcf507)
 
 </div>
 
@@ -908,7 +909,7 @@ ORDER BY
 [](genre_performance_by_total_revenue_image)
 <div align = "center">
 
-![Genre Performance By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/2a11e708-216a-40a9-82f3-35d779e417b1)
+![Genre Performance By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/42daadba-cd76-4596-ae16-bbd85fa27c5d)
 
 
 </div>
@@ -1045,7 +1046,7 @@ LIMIT 10;
 [](top_10_movies_by_total_revenue_segmented_by_country_image)
 <div align = "center">
 
-![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/d14b9f2b-8a07-4207-a33b-4c359d965576)
+![Top 10 Movies By Total Revenue Segmented By Country](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/126cc61b-94b8-4416-9002-fc6d4696622f)
 
 
 </div>
@@ -1114,7 +1115,7 @@ ORDER BY
 [](Top_5_Genres_By_Total_Revenue_Segmented_By_Day_Of_Week_image)
 <div align = "center">
 
-![Top 5 Genres By Total Revenue Segmented By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/54f12e31-fc5c-4e0a-8198-28b730589801)
+![Top 5 Genres By Total Revenue Segmented By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/d1d25d40-8513-4bc8-8644-98b68a753c71)
 
 </div>
 
@@ -1430,7 +1431,7 @@ LIMIT 10;
 [](sql_image)
 <div align = "center">
 
-Movies With English Language                                                                                                                  |  Movies With Non-English Language		     
+Movies With English Language                                                                                                                  |   Non-English Language Movies		     
 :-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 ![Screenshot (39)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fbf7ce3e-bc60-4017-a8cc-b60bdb64f633)    |    ![Screenshot (40)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/cfcad8a5-7073-4af8-8b7c-c1f750594d8f)
           
@@ -1981,7 +1982,7 @@ ORDER BY
 [](top_5_movies_by_total_votes_segmented_by_cast_image)
 <div align = "center">
 
-![Dashboard 3](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/1d526537-0008-4447-9794-a24c3c7cce03)
+![Top 5 Movies By Total Votes Segmented By  Cast](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/566862d0-55ae-4af6-986f-2989768a7798)
 
 </div>
 
@@ -2165,7 +2166,7 @@ ORDER BY
 [](top_10_movies_by_total_votes_segmented_by_director_name_image)
 <div align = "center">
 
-![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/edcc284a-4a2c-4ce4-83c6-128624cce029)
+![Top 10 Movies By Total Votes Segmented By Director Name](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c3a92606-66b5-475f-a648-df40b5d0f9c7)
 
 </div>
 
