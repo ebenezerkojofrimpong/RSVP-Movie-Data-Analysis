@@ -514,7 +514,7 @@ ORDER BY
 
 ```
 
-<sql_image>
+![](sql_image)
 <div align="center">
 
 ![Screenshot (21)](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/51addd33-e501-440a-bfac-f39c8619c8cb)
