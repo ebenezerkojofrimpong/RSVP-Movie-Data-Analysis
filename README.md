@@ -526,6 +526,8 @@ ORDER BY
 [](Total_Revenue_By_Year_image)
 ![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/23d03b84-d30f-43c7-80c8-f2eb4902216a)
 
+<br>
+
 Notably, in 2017, the total revenue amounted to a substantial $206.67 billion, marking a robust financial performance for the industry. The following year, 2018, witnessed a notable increase in total revenue, reaching $235.42 billion, indicating further growth. However, in 2019, the total revenue experienced a decline, totaling $167.98 billion, suggesting downturn in industry dynamics during this period. 
 
 
@@ -566,6 +568,11 @@ FROM all_info_table;
 ![Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/7486551d-2689-41cf-bbe0-5e1a10f51b76)
 
 </div>
+
+<br>
+
+The chart reveals that the combined total revenue for the years 2016, 2017, and 2019 amounts to a substantial $610 billion.
+
 
 
 ---
@@ -608,6 +615,11 @@ LIMIT 10;
 
 
 </div>
+
+<br>
+
+The chart highlights the exceptional performance of "Avengers Endgame" and "Avengers Infinity War" in terms of revenue generation. "Avengers Endgame" emerges as the top-grossing movie, generating a staggering $67.15 billion in revenue, followed closely by "Avengers Infinity War" with total revenue of $49.16 billion. 
+
 
 
 ---
@@ -653,6 +665,11 @@ LIMIT 10;
 
 </div>
 
+<br>
+
+The chart showcases the dominance of Marvel Studios in the film industry, with a remarkable total revenue of $150 billion. Following behind is Walt Disney Pictures, with total revenue amounting to $49 billion.
+
+
 
 ---
 
@@ -696,6 +713,12 @@ LIMIT 10;
 ![Top 10 Countries By Total Revenue](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/90689138-187d-4a17-83ca-017a787cf2c1)
 
 </div>
+
+<br>
+
+The chart reveals the United States as the powerhouse of the global film industry, boasting an impressive total revenue of $336.13 billion. China follows behind, with a substantial total revenue of $53.33 billion.
+
+
 
 ---
 
@@ -744,6 +767,11 @@ ORDER BY
 ![Total Revenue By Year Segmented By Quarter](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/5ddd0bdc-53de-40ab-bdd1-dfdb5171b051)
 
 </div>
+
+<br>
+
+
+The chart shows predictable patterns in revenue by quarter and year. Quarter 2 repeatedly generates the most revenue, suggesting this period consistently sees peak movie attendance and box office earnings. Although Quarter 2 of 2019 has the highest revenue overall, strong results are also seen in Quarter 4 of 2017 and Quarter 1 of 2018. 
 
 
 ---
@@ -799,6 +827,10 @@ ORDER BY
 ![Total Revenue By Time Period](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/cfead6ee-47b7-408b-ad36-182fc84776ce)
 
 </div>
+
+<br>
+
+The chart illustrates that weekdays significantly contribute to total revenue, comprising 96.2% of the overall earnings, totaling $587.1 billion. Conversely, weekends contribute a smaller share, generating 23 billion dollars, accounting for only 3.8% of the total revenue.
 
 
 ---
@@ -856,12 +888,23 @@ ORDER BY
 
 </div>
 
+<br>
+
+The chart highlights that Friday leads in revenue generation, with a total of $245.9 billion, closely followed by Thursday, which generated $205.3 billion.
+
+
+
 
 ---
 
 
 
 <br>
+
+
+
+
+
 
 
 
