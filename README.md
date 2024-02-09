@@ -526,6 +526,11 @@ ORDER BY
 [](Total_Revenue_By_Year_image)
 ![Dashboard 2](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/23d03b84-d30f-43c7-80c8-f2eb4902216a)
 
+Notably, in 2017, the total revenue amounted to a substantial $206.67 billion, marking a robust financial performance for the industry. The following year, 2018, witnessed a notable increase in total revenue, reaching $235.42 billion, indicating further growth. However, in 2019, the total revenue experienced a decline, totaling $167.98 billion, suggesting downturn in industry dynamics during this period. 
+
+
+
+
 
 ---
 
