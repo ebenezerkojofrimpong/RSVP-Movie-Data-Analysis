@@ -1337,8 +1337,6 @@ ORDER  BY
 
 <br>
 
-The chart illustrates how genre preferences have evolved over the years based on average ratings. 
-
 In 2017, Family movies received the highest average rating of 7.27, closely followed by Drama at 7.12.
 
 In 2018, Adventure emerged as the top-rated genre with an average rating of 7.52, followed by Sci-Fi at 7.44. 
