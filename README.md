@@ -962,6 +962,11 @@ ORDER BY
 
 </div>
 
+<br>
+
+Adventure emerges as the top-performing genre, accumulating a total revenue of $148 billion, closely trailed by Action, which generated $139 billion.
+
+
 
 ---
 
@@ -1022,6 +1027,10 @@ ORDER BY
 
 
 </div>
+
+<br>
+
+In 2017 and 2019, Drama ranked highest in total votes, while Action claimed the top spot in 2018. Adventure consistently followed as the second highest genre. Drama, Action, and Adventure remained consistently popular across the years, although there was a decline in total votes for all genres in 2019.
 
 
 ---
@@ -1099,6 +1108,10 @@ LIMIT 10;
 
 </div>
 
+<br>
+
+The chart highlights the large contribution of the USA market to the revenue of the top 10 movies, showing it is the primary driver of their global box office success. This indicates the country's pivotal role in the global film industry.
+
 
 ---
 
@@ -1166,6 +1179,10 @@ ORDER BY
 ![Top 5 Genres By Total Revenue Segmented By Day Of Week](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/d1d25d40-8513-4bc8-8644-98b68a753c71)
 
 </div>
+
+<br>
+
+The chart reveals that Action and Adventure peak on Thursdays, with Action leading in revenue among all genres on that day. Meanwhile, Comedy, Drama, and Fantasy attain their highest revenues on Fridays. This analysis suggests that audience preferences for various genres vary by the day of the week, influencing their revenue contributions.
 
 
 ---
