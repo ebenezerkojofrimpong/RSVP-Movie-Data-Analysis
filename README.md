@@ -2185,6 +2185,9 @@ HAVING
 
 </div>
 
+<br>
+
+Joe Russo and Anthony Russo emerge as the top performing directors with an average rating of 8.50 each.
 
 
 Interact with full list of top directors here [Tableau](https://public.tableau.com/views/RankOfDirectorsByAverageRating/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
@@ -2275,6 +2278,9 @@ ORDER BY
 
 </div>
 
+<br>
+
+The chart reveals that each movie is directed by  a unique set directors, highlighting the diverse director compositions across the ten top-rated movies.
 
 
 ---
