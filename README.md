@@ -1618,8 +1618,11 @@ GROUP BY
 
 ![Dashboard 7](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/93d14409-7512-4b28-bd41-c9d318827f20)
 
-
 </div>
+
+<br>
+
+In 2017, the total duration peaked at 1.2 million units, demonstrating a significant volume of film content. This was followed closely by 2018, which saw a slightly lower total duration of 1.15 million units. However, 2019 recorded the lowest total duration at 715.16K units, indicating a decline in film-making activity during that year.
 
 
 ---
@@ -1694,9 +1697,11 @@ LIMIT 10;
 
 ![Dashboard 1](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/fec4e6d7-cac2-402c-bf47-0242e0f22780)
 
-
 </div>
 
+<br>
+
+The chart suggests that longer movie durations (above 120 minutes) are associated with higher revenue, as most of the top 10 movies have long durations. However, "The Lion King" bucks this trend by achieving high revenue with a standard duration (from 90 minutes to 120 minutes).
 
 ---
 
@@ -1809,14 +1814,16 @@ Movies Produced In USA                                                          
 
                                                                                                      
 
-[](top_10_USA_and_Non_USA_movies_by_total_duration__image)
+[](top_10_USA_and_Non_USA_movies_by_total_votes_segmented_by_duration__image)
 <div align = "center">
 
 ![Dashboard 8](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/b6744059-0746-43a5-be5c-2920a5af2fde)
 
 </div>
 
+<br>
 
+For USA movies, most have long durationsn(above 120 minutes), except for "Spider-Man: Into the Spider-Verse," which has a standard duration(from 90 to 120 minutes). In contrast, among the top 10 Non-USA movies, there's a mix of long, standard, and short durations (less than 90 minutes), indicating varied audience preferences.
 
 ---
 
