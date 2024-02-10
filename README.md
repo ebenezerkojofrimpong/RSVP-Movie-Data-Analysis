@@ -117,6 +117,8 @@ recommended marketing program.
 
 ---
 
+<br>
+
 ## PREPARE
 Involves collecting data and information and ensuring it satisfies necessary parameters.
 
@@ -216,13 +218,14 @@ SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
 **median_rating** => The median rating assigned to a movie
 
 
----
+<br>
 
 ## Tools
 The tools used in this project are **MySQL** and **Tableau**.
 
 ---
 
+<br>
 
 ## PROCESS
 This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
@@ -482,6 +485,8 @@ INNER JOIN ratings R ON G.movie_id = R.movie_id;
 
 </div>
 
+
+---
 
 <br>
 
@@ -2281,7 +2286,7 @@ ORDER BY
 
 <br>
 
-The chart reveals that each movie is directed by  a unique set directors, highlighting the diverse director compositions across the ten top-rated movies.
+The chart reveals that each movie is directed by  a unique set of directors, highlighting the diverse director compositions across the ten top-rated movies.
 
 
 ---
@@ -2295,7 +2300,7 @@ The chart reveals that each movie is directed by  a unique set directors, highli
 
 
 
-## Recommendations
+## RECOMMENDATIONS
 
 1. Identify reasons for the revenue decline in 2019 and take corrective measures.
 
@@ -2326,6 +2331,26 @@ The chart reveals that each movie is directed by  a unique set directors, highli
 14. Partner with successful directors for quality production.
 
 
+---
+
+<br>
+
+
+## CONCLUSION
+
+The analysis of the film industry's performance across various metrics highlights several key insights and recommendations for industry stakeholders. From recognizing revenue patterns to leveraging successful studios and talent, there are ample opportunities to optimize strategies and drive growth.
+
+Moving forward, future projects could incorporate conducting in-depth analysis of successful movies to identify key elements driving their success, such as compelling narratives, relatable characters, or innovative storytelling techniques. By implementing this strategy, the industry can navigate challenges, capitalize on opportunities, and continue to thrive in the dynamic entertainment landscape.
+
+---
+
+<br>
+
+## REFERENCES
+
+1. **Google Data Analytics Professional Certificate**
+
+2. **NitinKumar Sharma**: Analyzing Film Data to Guide RSVP Movies’ Global Expansion 
 
 
 
@@ -2349,48 +2374,6 @@ The chart reveals that each movie is directed by  a unique set directors, highli
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Based on the decline in total revenue in 2019, it is important for industry players to analyze the factors contributing to the decline and take corrective measures.
-
-2. "Avengers Endgame" and "Avengers Infinity War" have demonstrated exceptional revenue generation. Consider analyzing the success factors behind these movies and replicate those strategies in future productions.
-
-3. Marvel Studios and Walt Disney Pictures have achieved significant revenue. Explore collaborations and partnerships to leverage the success of these studios.
-
-4. The United States and China are the leading markets in terms of revenue. Focus on developing strategies to tap into these markets and tailor content to cater to their preferences.
-
-5. Recognize the revenue patterns by quarter and day to optimize release dates for movies. Plan major releases during peak periods such as Quarter 2 and strategically target weekdays, particularly Fridays.
-
-6.Production companies should strategically schedule the release dates of movies based on the genre and the day of the week that aligns with audience preferences. For instance, action-packed movies could be released on Thursdays to capitalize on the peak in revenue for this genre on that day.
-
-7. Adventure and Action genres have consistently generated high revenue. Allocate resources and investments towards these genres while considering audience preferences.
-
-8.Monitor the popularity of all Genres, since they all declined in total votes in 2019. Stay updated on audience preferences and adapt content accordingly.
-
-9. The positive trend in audience ratings indicates increasing satisfaction. Continue focusing on delivering high-quality content and engaging storytelling to maintain and further improve audience sentiment.
-
-10. Analyze the factors contributing to high ratings for movies like "Runam" and "Fan" to understand audience preferences and incorporate those elements in future productions.
-
-11. Non-English Language movies received high ratings and engagement. Explore opportunities to distribute and promote such films to cater to the growing demand for diverse content.
-
-12. Longer movie durations tend to be associated with higher revenue. Consider producing movies with longer durations while ensuring the content remains engaging.
-
-13. Vijay Sethupathi and Shraddah Srinath have emerged as the highest-performing actors and actresses. Consider collaborating with these talents in future projects to capitalize on their popularity and audience appeal.
-
-14. Joe Russo and Anthony Russo have shown strong directing performances. Explore opportunities to work with these directors to elevate the quality and appeal of your productions.
 
 
 
