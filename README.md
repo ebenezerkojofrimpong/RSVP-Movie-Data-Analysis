@@ -2295,6 +2295,102 @@ The chart reveals that each movie is directed by  a unique set directors, highli
 
 
 
+## Recommendations
+
+1. Identify reasons for the revenue decline in 2019 and take corrective measures.
+
+2. Study the success factors of "Avengers Endgame" and "Avengers Infinity War" including marketing strategies and storyline appeal for future productions.
+
+3. Explore collaboration opportunities with successful studios like Marvel and Disney to leverage their expertise and resources for mutual revenue growth.
+
+4. Develop targeted marketing campaigns and content strategies tailored to leading markets like the USA and China to maximize revenue potential in these regions.
+
+5. Optimize movie release timing for maximum revenue by analyzing quarterly and daily revenue patterns. Prioritize major releases during peak periods like Quarter 2, focusing on weekdays, especially Fridays.
+
+6. Optimize movie releases to match genre preferences and peak revenue days, scheduling action films for Thursdays, the top day for Action genre revenue.
+
+7. Allocate production resources and investments towards genres like Adventure and Action, which have consistently demonstrated high revenue potential.
+
+8. Monitor popularity and audience trends, adjusting content in response to declining total votes across all genres in 2019.
+
+9. Prioritize high-quality content and engaging storytelling for sustained audience satisfaction.
+
+10. Analyze top-rated films "Runam" and "Fan" for success insights in future productions.
+
+11. Promote Non-English Language films, capitalizing on their high ratings and engagement levels to expand audience reach and revenue potential.
+
+12. Consider producing longer-duration films while ensuring that content remains engaging and captivating throughout to maximize audience retention and revenue generation.
+
+13. Collaborate with top-performing actors like Vijay Sethupathi and Shraddah Srinath to leverage their popularity and audience appeal for increased viewer engagement and revenue.
+
+14. Partner with successful directors for quality production.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Based on the decline in total revenue in 2019, it is important for industry players to analyze the factors contributing to the decline and take corrective measures.
+
+2. "Avengers Endgame" and "Avengers Infinity War" have demonstrated exceptional revenue generation. Consider analyzing the success factors behind these movies and replicate those strategies in future productions.
+
+3. Marvel Studios and Walt Disney Pictures have achieved significant revenue. Explore collaborations and partnerships to leverage the success of these studios.
+
+4. The United States and China are the leading markets in terms of revenue. Focus on developing strategies to tap into these markets and tailor content to cater to their preferences.
+
+5. Recognize the revenue patterns by quarter and day to optimize release dates for movies. Plan major releases during peak periods such as Quarter 2 and strategically target weekdays, particularly Fridays.
+
+6.Production companies should strategically schedule the release dates of movies based on the genre and the day of the week that aligns with audience preferences. For instance, action-packed movies could be released on Thursdays to capitalize on the peak in revenue for this genre on that day.
+
+7. Adventure and Action genres have consistently generated high revenue. Allocate resources and investments towards these genres while considering audience preferences.
+
+8.Monitor the popularity of all Genres, since they all declined in total votes in 2019. Stay updated on audience preferences and adapt content accordingly.
+
+9. The positive trend in audience ratings indicates increasing satisfaction. Continue focusing on delivering high-quality content and engaging storytelling to maintain and further improve audience sentiment.
+
+10. Analyze the factors contributing to high ratings for movies like "Runam" and "Fan" to understand audience preferences and incorporate those elements in future productions.
+
+11. Non-English Language movies received high ratings and engagement. Explore opportunities to distribute and promote such films to cater to the growing demand for diverse content.
+
+12. Longer movie durations tend to be associated with higher revenue. Consider producing movies with longer durations while ensuring the content remains engaging.
+
+13. Vijay Sethupathi and Shraddah Srinath have emerged as the highest-performing actors and actresses. Consider collaborating with these talents in future projects to capitalize on their popularity and audience appeal.
+
+14. Joe Russo and Anthony Russo have shown strong directing performances. Explore opportunities to work with these directors to elevate the quality and appeal of your productions.
 
 
 
