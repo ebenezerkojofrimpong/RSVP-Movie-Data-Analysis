@@ -1254,6 +1254,10 @@ ORDER BY
 
 </div>
 
+<br>
+
+The chart illustrates a positive trend in audience satisfaction over the years. In 2017, movies attained a respectable average rating of 6.88, indicating a generally favorable reception. This trend continued in 2018, with movies receiving an average rating of 7.02, reflecting an improvement in audience sentiment. Notably, in 2019, movies achieved the highest average rating of 7.13, suggesting a further increase in audience satisfaction. This analysis highlights a consistent upward trajectory in audience ratings over the three years.
+
 
 ---
 
@@ -1329,6 +1333,16 @@ ORDER  BY
 
 </div>
 
+<br>
+
+The chart illustrates how genre preferences have evolved over the years based on average ratings. 
+In 2017, Family movies received the highest average rating of 7.27, closely followed by Drama at 7.12.
+
+In 2018, Adventure emerged as the top-rated genre with an average rating of 7.52, followed by Sci-Fi at 7.44. 
+
+In 2019, Adventure maintained its popularity with the highest average rating of 7.69, while Action followed closely behind at 7.58. 
+
+This trend reflects the dynamic nature of audience preferences across different genres over time.
 
 ---
 
@@ -1409,6 +1423,13 @@ LIMIT 10;
 
 
 </div>
+
+<br>
+
+The chart showcases notable ratings among movies. "Runam" stands out with the highest average rating of 9.70, followed closely by "Fan" at 9.60. These exceptionally high ratings indicate strong audience appreciation for these films' quality and storytelling.
+
+
+
 
 
 ---
@@ -1509,7 +1530,7 @@ Movies With English Language                                                    
 
                                                                                                         
 
-[](average_rating_by_language_segmented_by_movie_image)
+[](top_10_movies_by_average_rating_segmented_by_language_image)
 <div align = "center">
 
 ![Dashboard 6](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/c11c4cdf-d9f9-42fc-8b00-07c7831709d9)
@@ -1517,6 +1538,9 @@ Movies With English Language                                                    
 
 </div>
 
+<br>
+
+The charts reveal that Non-English Language movies received the highest number of ratings among the top-rated films. This indicates a significant level of engagement and interest from audiences in films produced in languages other than English.
 
 
 ---
