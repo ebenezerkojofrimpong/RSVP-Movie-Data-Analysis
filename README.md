@@ -1916,7 +1916,9 @@ HAVING
 
 </div>
 
+<br>
 
+Vijay Sethupathi leads as the highest-performing actor, boasting an impressive average rating of 8.51.
 
 Interact with full list of top actors here [Tableau](https://public.tableau.com/views/RankOfActorsByAverageRating/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
@@ -2004,6 +2006,9 @@ HAVING
 
 </div>
 
+<br>
+
+Shraddah Srinath leads as the highest-performing actress, boasting an impressive average rating of 8.58.
 
 
 Interact with full list of top actresses here [Tableau](https://public.tableau.com/views/RankOfActressesByAverageRating/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
@@ -2081,6 +2086,10 @@ ORDER BY
 ![Top 5 Movies By Total Votes Segmented By  Cast](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/566862d0-55ae-4af6-986f-2989768a7798)
 
 </div>
+
+<br>
+
+The chart demonstrates that each movie features a unique set of actors or actresses, highlighting the diverse cast compositions across the five top-rated movies.
 
 
 
