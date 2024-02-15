@@ -1,6 +1,12 @@
 # Exploring RSVP Trends: A Data-Driven Analysis of Movie Success
+
+<div align = "center">
+	
 ## Ebenezer Kojo Frimpong
-## February, 1, 2024
+## February 1, 2024
+
+</div>
+
 
 ---
 
