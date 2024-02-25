@@ -14,7 +14,7 @@
 ![maxresdefault](https://github.com/ebenezerkojofrimpong/RSVP-Movie-Data-Analysis/assets/154938134/6547e570-6aee-40d0-a835-94e8f8caba0e)
 
 
-## Project Overview
+## Introduction
 "RSVP Movies Data Analysis" is a comprehensive data analysis project aiming to leverage insights from movie data spanning three years (2017 - 2019). 
 As a prominent Indian film production company, RSVP Movies has earned acclaim for its consistent delivery of super-hit movies that resonate with diverse audiences.
 With a rich history of crafting successful films, RSVP Movies seeks to further enhance its global footprint by tailoring a cinematic experience for audiences worldwide in 2024. To ensure the success of this ambitious venture, RSVP Movies has embraced the power of data analytics.
