@@ -28,7 +28,7 @@ As a data analyst and SQL expert, my role in this project is to meticulously ana
 
 We will address this case using the following methodology:
 
-`ASK, PREPARE, PROCESS, ANALYSE, SHARE AND ACT`
+`ASK` `PREPARE` `PROCESS` `ANALYSE` `SHARE`  `ACT`
 
 <br>
 
