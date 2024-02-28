@@ -100,6 +100,7 @@ Here are the key skills needed:
 `Performing Join and Union operations`
 `Filtering and Sorting`
 `Data Transformation`
+<br>
 `Writing Sub-queries`
 `Grouping and Aggregation`
 `Exploratory Data Analysis (EDA)`
