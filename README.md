@@ -90,6 +90,12 @@ The primary goal of this project is to extract actionable insights and provide s
 
 <br>
 
+
+## Tools
+The tools used in this project are **MySQL** and **Tableau**.
+
+<br>
+
 ## Skills / Concepts Applied
 
 For this project, a combination of SQL and Tableau skills were crucial for extracting, processing, and visualizing insights from the dataset. 
@@ -225,10 +231,6 @@ SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
 **median_rating** => The median rating assigned to a movie
 
 
-<br>
-
-## Tools
-The tools used in this project are **MySQL** and **Tableau**.
 
 ---
 
