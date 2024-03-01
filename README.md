@@ -2306,10 +2306,9 @@ The chart reveals that each movie is directed by  a unique set of directors, hig
 
 
 
+# `ACT`
 
-
-
-## RECOMMENDATIONS
+My recommendations are;
 
 1. Identify reasons for the revenue decline in 2019 and take corrective measures.
 
