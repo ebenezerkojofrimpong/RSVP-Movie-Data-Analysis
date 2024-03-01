@@ -34,7 +34,7 @@ We will address this case study using the following methodology:
 
 
 
-## `ASK`
+# `ASK`
 This phase involves defining the issue to be solved, identifying stakeholders and what their expectations from the project are.
 
 <br>
@@ -132,7 +132,7 @@ recommended marketing program.
 
 <br>
 
-## `PREPARE`
+# `PREPARE`
 Involves collecting data and information and ensuring it satisfies necessary parameters.
 
 <br>
@@ -236,7 +236,7 @@ SELECT 'role_mapping' AS TableName, COUNT(*) AS RowCount FROM role_mapping;
 
 <br>
 
-## `PROCESS`
+# `PROCESS`
 This phase of the analysis process includes cleaning the data and making sure it is fit for purpose. As well as making any modifications necessary.
 
 <br>
@@ -503,7 +503,7 @@ INNER JOIN ratings R ON G.movie_id = R.movie_id;
 
 
 
-## `ANALYZE`
+# `ANALYZE`
 
 In this phase we analyze the data using statistical methods to find patterns, relationships, and trends.
 
