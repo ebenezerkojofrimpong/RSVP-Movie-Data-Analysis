@@ -88,6 +88,7 @@ These questions will guide the future marketing program:
 ## Business Task
 The primary goal of this project is to extract actionable insights and provide strategic recommendations for RSVP Movies.
 
+<br>
 
 ## Skills / Concepts Applied
 
