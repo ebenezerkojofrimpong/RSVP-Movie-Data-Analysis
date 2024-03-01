@@ -102,22 +102,22 @@ For this project, a combination of SQL and Tableau skills were crucial for extra
 Here are the key skills needed:
 
 ### SQL Skills:
-`Data Modelling`
-`Writing SQL Queries`
-`Performing Join and Union operations`
-`Filtering and Sorting`
+**`Data Modelling`**
+**`SQL Queries`**
+**`Join and Union operations`**
+**`Filtering and Sorting`**
 
-`Data Transformation`
-`Writing Sub-queries`
-`Grouping and Aggregation`
-`Exploratory Data Analysis (EDA)`
+**`Data Transformation`**
+**`Subqueries`**
+**`Grouping and Aggregation`**
+**`Exploratory Data Analysis (EDA)`**
 
 
 ### Tableau Skills:
-`Data Connection`
-`Data Visualization`
-`Calculated Fields`
-`Filtering and Sorting`
+**`Data Connection`**
+**`Data Visualization`**
+**`Calculated Fields`**
+**`Filtering and Sorting`**
 
 <br>
 
